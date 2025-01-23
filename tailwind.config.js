@@ -23,6 +23,9 @@ export default {
         }
       }
     },
+    fontFamily: {
+      titleFont: ["Rowdies", "serif"]
+    },
   },
   plugins: [],
 }

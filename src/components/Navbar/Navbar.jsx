@@ -59,7 +59,7 @@ function Navbar() {
                   <li key={index}>
                     <a
                       href=""
-                      className="inline-block px-4 font-semibold text-grey-500 hover:text-black dark:hover-text-white"
+                      className="inline-block px-4 font-semibold text-grey-500 hover:text-primary dark:hover-text-white"
                     >
                       {menu.name}
                     </a>

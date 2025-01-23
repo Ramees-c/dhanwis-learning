@@ -34,10 +34,10 @@ const ServiceData = [
 function Services() {
   return (
     <div>
-      <div className="container py-24">
+      <div className="container py-20">
         {/* Header section */}
-        <div className="space-y-4 p-6 text-center max-w-[500px] mx-auto mb-5">
-          <h1 className="uppercase font-semibold text-2xl text-primary">
+        <div className="space-y-4 p-6 max-w-[2000px] text-center mx-auto mb-5">
+          <h1 className="uppercase font-bold text-3xl text-primary font-titleFont">
             Why an scholercity out of The ordinary
           </h1>
           <p className="font-semibold">
