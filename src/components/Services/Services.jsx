@@ -54,7 +54,7 @@ function Services() {
                 <div className="text-4xl">{data.icon}</div>
               </div>
               <p className="font-semibold">{data.title}</p>
-              <p className="text-sm text-gray-500">{data.desc}</p>
+              <p className="text-sm text-gray-500 dark:text-white/70">{data.desc}</p>
               <p></p>
             </div>
           ))}

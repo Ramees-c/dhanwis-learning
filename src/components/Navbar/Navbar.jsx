@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo/Learning Hub 4.png"
+import logo from "../../assets/images/logo/Dhanwis_logo1.png"
 
 import Darkmode from "../Darkmode/Darkmode";
 
@@ -50,7 +50,7 @@ function Navbar() {
             >
               Dhanwis
             </a> */}
-            <a href=""><img src={logo} alt="" width={'100px'} /></a>
+            <a href=""><img src={logo} alt="" width={'120px'} /></a>
 
             {/* Menu Items */}
             <div className="hidden lg:block">

@@ -1,6 +1,6 @@
 import React from "react";
 
-import about_img from "../../assets/images/about/about1.jpg";
+import about_img from "../../assets/images/about/about2.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import Button from "../Shared/Button";
 
@@ -26,7 +26,7 @@ function About() {
             <div className="basis-[45%]">
               <img
                 src={about_img}
-                className="w-full rounded-md mb-10 sm:mb-0"
+                className="w-full rounded-xl mb-10 sm:mb-0"
                 alt=""
               />
             </div>
