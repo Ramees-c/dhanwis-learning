@@ -55,7 +55,8 @@ function Testimonials() {
         <div>
           <Slider {...settings}>
             {TestimonialsData.map((data) => (
-              <div key={data.id}>
+              <div data-aos = "fade-up" 
+              key={data.id}>
                 <div className="w-full overflow-hidden h-auto p-8 space-y-10 group rounded-3xl hero-bg-color">
                   <p className="text-base">{data.content}</p>
                   <div className="w-full flex items-center justify-between ">

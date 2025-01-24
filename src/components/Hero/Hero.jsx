@@ -58,16 +58,28 @@ function Hero() {
                 <div key={data.id} className="grid grid-cols-1 sm:grid-cols-2">
                   {/* text content section */}
                   <div className="flex flex-col justify-center gap-4 sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
-                    <h1 className="text-1xl sm:text-6xl lg-text-1xl font-bold text-primary">
+                    <h1 data-aos="zoom-out"
+                    data-aos-duration="500"
+                    data-aos-once="true"
+                    className="text-1xl sm:text-6xl lg-text-1xl font-bold text-primary">
                       {data.subtitle}
                     </h1>
-                    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-5">
+                    <h1 data-aos="zoom-out"
+                    data-aos-duration="500"
+                    data-aos-once="true" 
+                    className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-5">
                       {data.title}
                     </h1>
-                    <h1 className="text-1xl dark:text-white mb-5">
+                    <h1 data-aos="zoom-out"
+                    data-aos-duration="500"
+                    data-aos-once="true" 
+                    className="text-1xl dark:text-white mb-5">
                       {data.description}
                     </h1>
-                    <div>
+                    <div data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="300">
                       <Button
                         text="Ready to begin?"
                         bgColor="bg-primary"
@@ -78,7 +90,10 @@ function Hero() {
 
                   {/* image section */}
                   <div className="order-1 sm:order-2">
-                    <div>
+                    <div
+                    data-aos="zoom-in"
+                    data-aos-once="true" 
+                    >
                       <img
                         src={data.img}
                         alt=""

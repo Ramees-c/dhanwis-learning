@@ -23,7 +23,11 @@ function About() {
 
           <div className="max-w-[1320px] md:py-[80] py-5 flex sm:flex-row flex-col justify-center items-center mx-auto">
             {/* Content section */}
-            <div className="basis-[45%]">
+            <div
+            data-aos="fade-right"
+            data-aos-duration="500"
+            data-aos-once="true" 
+            className="basis-[45%]">
               <img
                 src={about_img}
                 className="w-full rounded-xl mb-10 sm:mb-0"
@@ -31,7 +35,11 @@ function About() {
               />
             </div>
 
-            <div className="basis-[45%] ml-0 sm:ml-10">
+            <div 
+            data-aos="fade-left"
+            data-aos-duration="500"
+            data-aos-once="true" 
+            className="basis-[45%] ml-0 sm:ml-10">
               <h1 className="uppercase font-semibold text-2xl text-justify text-primary mb-1">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Facilis, impedit.
@@ -66,7 +74,12 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center mt-5">
+          <div
+          data-aos="fade-up"
+          data-aos-offset="0"
+          data-aos-duration="500"
+          data-aos-delay="300"
+          className="flex justify-center mt-5">
             <Button
               text="Apply Now"
               bgColor="bg-primary"

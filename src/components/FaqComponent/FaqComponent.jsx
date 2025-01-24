@@ -59,12 +59,14 @@ function FaqComponent() {
         {/* Content section */}
         <div>
           {FaqData.map((data, index) => (
-            <div className="border-b border-black/15 dark:border-white/15 last:border-b-0 overflow-hidden">
+            <div 
+            data-aos="fade-up"
+            key={index} className="border-b border-black/15 dark:border-white/15 last:border-b-0 overflow-hidden">
               <div
                 className="flex justify-between gap-8 cursor-pointer items-start text-2xl py-4"
                 onClick={() => showAnswer(index)}
               >
-                <h1>{data.question}</h1>
+                <h1 className="text-xl">{data.question}</h1>
                 <span
                   className={`text-2xl ${
                     showSelectedQ === index ? "rotate-180" : ""
