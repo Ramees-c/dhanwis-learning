@@ -38,13 +38,13 @@ function CourseCard() {
   ];
 
   return (
-    <div className="flex flex-wrap -m-4">
+    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-5 place-items-center">
       {CourseData.map((data) => (
         <div
           data-aos="fade-up"
           data-aos-delay="{data.aosDelay}"
           key={data.id}
-          className="p-4 sm:w-1/3 lg:w-1/4"
+          className="p-4"
         >
           <div className="h-full shadow-xl rounded-3xl hero-bg-color overflow-hidden">
             <img

@@ -50,20 +50,23 @@ function Services() {
           </p>
         </div>
         {/* Card section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {ServiceData.map((data) => (
-            <div 
-            data-aos="fade-up"
-            data-aos-delay={data.aosDelay}
-            
-            key={data.id} className="space-y-4 p-6 rounded-xl shadow-[0_0_22px_rgba(0,0,0,0.15)]">
+            <div
+              data-aos="fade-up"
+              data-aos-delay={data.aosDelay}
+              key={data.id}
+              className="space-y-4 p-6 rounded-xl shadow-[0_0_22px_rgba(0,0,0,0.15)]"
+            >
               {/* Icon section */}
               <div className="w-10 h-10 rounded-lg flex justify-center text-white">
                 <div className="text-4xl">{data.icon}</div>
               </div>
               <p className="font-semibold">{data.title}</p>
-              <p className="text-sm text-gray-500 dark:text-white/70">{data.desc}</p>
-              <p></p>
+              <p className="text-sm text-gray-500 dark:text-white/70">
+                {data.desc}
+              </p>
+              
             </div>
           ))}
         </div>

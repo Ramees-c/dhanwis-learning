@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/logo/Dhanwis_logo1.png";
+import logo from "../../assets/images/logo/dhanwis_academy_logo.png";
 
 import Darkmode from "../Darkmode/Darkmode";
 
@@ -58,25 +58,20 @@ function Navbar() {
               <img src={logo} alt="" width={"120px"} />
             </a>
 
-            <div
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-4xl text-primary absolute right-6 top-6 cursor-pointer md:hidden"
-            >
-              {isOpen ? <IoMdClose /> : <IoIosMenu />}
-            </div>
+            
 
             {/* Menu Items */}
             <div>
               <ul
-                className={`md:flex pt-10 sm:pt-0 md:items-center md:pb-0 pb-12 absolute md:static bg-white dark:bg-gray-900 dark:text-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9  ${
-                  isOpen ? "top-20 opacity-100" : "top-[-490px]"
-                } md:opacity-100`}
+                className={`lg:flex pt-10 lg:pt-0 lg:items-center lg:pb-0 pb-12 absolute lg:static bg-white dark:bg-gray-900 dark:text-white lg:z-auto z-[-1] left-0 md:left-5 w-full lg:w-auto lg:pl-0 pl-9  ${
+                  isOpen ? "visible opacity-100" : "hidden"
+                } lg:opacity-100`}
               >
                 {MenuLinks.map((menu, index) => (
                   <li key={index}>
                     <a
                       href=""
-                      className="inline-block px-4 py-2 sm:py-0 font-semibold text-grey-500 hover:text-primary dark:hover-text-white"
+                      className="inline-block px-4 py-2 lg:py-0 font-semibold text-grey-500 hover:text-primary dark:hover-text-white"
                     >
                       {menu.name}
                     </a>
@@ -86,10 +81,16 @@ function Navbar() {
             </div>
           </div>
           {/* Navbar Right section */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-5">
             {/* Dark mode section */}
             <div>
               <Darkmode />
+            </div>
+            <div
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-4xl text-primary cursor-pointer lg:hidden"
+            >
+              {isOpen ? <IoMdClose /> : <IoIosMenu />}
             </div>
           </div>
         </div>

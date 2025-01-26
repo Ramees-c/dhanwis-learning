@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../../assets/images/logo/Dhanwis_logo1.png";
+import logo from "../../assets/images/logo/dhanwis_academy_logo.png";
 
 import {
   FaFacebook,
@@ -47,7 +47,7 @@ function Footer() {
   return (
     <div className="hero-bg-color rounded-3xl">
       <div className="container">
-        <div className="grid md:grid-cols-3 pb-20 pt-5">
+        <div className="grid lg:grid-cols-3 pb-20 pt-5">
           {/* Company details */}
           <div className=" py-8 px-4">
             <a href="">

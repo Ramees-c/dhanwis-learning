@@ -50,14 +50,14 @@ function Hero() {
   return (
     <div className="container">
       {/* Hero section */}
-      <div className="overflow-hidden  min-h-[550px] sm:min-h-[650px] hero-bg-color flex items-center justify-center">
-        <div className="container pb-8 sm:pb-0">
+      <div className="overflow-hidden min-h-[550px] sm:min-h-[650px] hero-bg-color flex items-center justify-center">
+        <div className="container pb-8 sm:pb-0 overflow-hidden">
           <Slider {...settings}>
             {HeroData.map((data) => (
               <div key={data.id}>
-                <div key={data.id} className="grid grid-cols-1 sm:grid-cols-2">
+                <div key={data.id} className="grid grid-cols-1 xl:grid-cols-2">
                   {/* text content section */}
-                  <div className="flex flex-col justify-center gap-4 sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10">
+                  <div className="flex flex-col justify-center gap-4 sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left order-2 xl:order-1 relative z-10">
                     <h1 data-aos="zoom-out"
                     data-aos-duration="500"
                     data-aos-once="true"
@@ -89,7 +89,7 @@ function Hero() {
                   </div>
 
                   {/* image section */}
-                  <div className="order-1 sm:order-2">
+                  <div className="order-1 xl:order-2">
                     <div
                     data-aos="zoom-in"
                     data-aos-once="true" 
