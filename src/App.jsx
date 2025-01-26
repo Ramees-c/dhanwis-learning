@@ -11,6 +11,10 @@ import Footer from "./components/Footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css"
 
+// react router dom
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+
 function App() {
 
   useEffect(() => {
@@ -28,12 +32,10 @@ function App() {
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white">
       <Navbar />
-      <Hero />
-      <Services />
-      <About />
-      <Courses />
-      <Testimonials />
-      <FaqComponent />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      
       <Footer />
     </div>
   );
