@@ -45,7 +45,7 @@ function Footer() {
   ];
 
   return (
-    <div className="hero-bg-color rounded-3xl">
+    <div className="hero-bg-color rounded-t-3xl">
       <div className="container">
         <div className="grid lg:grid-cols-3 pb-20 pt-5">
           {/* Company details */}

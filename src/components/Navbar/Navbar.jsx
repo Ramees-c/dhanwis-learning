@@ -6,6 +6,8 @@ import Darkmode from "../Darkmode/Darkmode";
 import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 
+import { Link } from "react-router-dom";
+
 const MenuLinks = [
   {
     id: 1,
@@ -54,27 +56,25 @@ function Navbar() {
             >
               Dhanwis
             </a> */}
-            <a href="">
+            <Link to="/">
               <img src={logo} alt="" width={"120px"} />
-            </a>
-
-            
+            </Link>
 
             {/* Menu Items */}
             <div>
               <ul
-                className={`lg:flex pt-10 lg:pt-0 lg:items-center lg:pb-0 pb-12 absolute lg:static bg-white dark:bg-gray-900 dark:text-white lg:z-auto z-[-1] left-0 md:left-5 w-full lg:w-auto lg:pl-0 pl-9  ${
+                className={`lg:flex pt-14 lg:pt-0 lg:items-center lg:pb-0 pb-12 absolute lg:static bg-white dark:bg-gray-900 dark:text-white lg:z-auto z-[-1] left-0 md:left-5 w-full lg:w-auto lg:pl-0 pl-9  ${
                   isOpen ? "visible opacity-100" : "hidden"
                 } lg:opacity-100`}
               >
                 {MenuLinks.map((menu, index) => (
                   <li key={index}>
-                    <a
-                      href=""
+                    <Link
+                      to={menu.link}
                       className="inline-block px-4 py-2 lg:py-0 font-semibold text-grey-500 hover:text-primary dark:hover-text-white"
                     >
                       {menu.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

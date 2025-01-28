@@ -41,10 +41,10 @@ function Services() {
       <div className="container py-20">
         {/* Header section */}
         <div className="space-y-4 p-6 max-w-[2000px] text-center mx-auto mb-5">
-          <h1 className="uppercase font-bold text-3xl text-primary font-titleFont">
+          <h1 className="uppercase font-bold text-2xl xl:text-4xl text-primary font-titleFont">
             Why an scholercity out of The ordinary
           </h1>
-          <p className="font-semibold">
+          <p className="font-semibold text-sm lg:text-xl">
             You don't have to struggle alone, you've got our assistance and
             help.
           </p>

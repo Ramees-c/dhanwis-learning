@@ -51,7 +51,7 @@ function FaqComponent() {
       <div className="container py-20">
         {/* Header section */}
         <div className="space-y-4 p-6 max-w-[2000px] text-center mx-auto mb-5">
-          <h1 className="uppercase font-bold text-3xl text-primary font-titleFont">
+          <h1 className="uppercase font-bold text-2xl xl:text-4xl text-primary font-titleFont">
             Frequently Asked Questions
           </h1>
         </div>

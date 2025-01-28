@@ -50,7 +50,7 @@ function Hero() {
   return (
     <div className="container">
       {/* Hero section */}
-      <div className="overflow-hidden min-h-[550px] sm:min-h-[650px] hero-bg-color flex items-center justify-center">
+      <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero-bg-color flex items-center justify-center">
         <div className="container pb-8 sm:pb-0 overflow-hidden">
           <Slider {...settings}>
             {HeroData.map((data) => (
@@ -97,7 +97,7 @@ function Hero() {
                       <img
                         src={data.img}
                         alt=""
-                        className="w-[400px] h-[200px] md:h-[500px] sm-h-[450px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]"
+                        className=" mb-5 lg:mb-0 w-[400px] h-[200px] md:h-[500px] sm-h-[450px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]"
                       />
                     </div>
                   </div>
