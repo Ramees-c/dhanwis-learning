@@ -44,7 +44,7 @@ function Services() {
           <h1 className="uppercase font-bold text-2xl xl:text-4xl text-primary font-titleFont">
             Why an scholercity out of The ordinary
           </h1>
-          <p className="font-semibold text-sm lg:text-xl">
+          <p className="font-semibold text-sm lg:text-xl text-black/85 dark:text-white">
             You don't have to struggle alone, you've got our assistance and
             help.
           </p>
@@ -56,7 +56,7 @@ function Services() {
               data-aos="fade-up"
               data-aos-delay={data.aosDelay}
               key={data.id}
-              className="space-y-4 p-6 rounded-xl shadow-[0_0_22px_rgba(0,0,0,0.15)]"
+              className="space-y-4 p-6 rounded-xl shadow-[0_0_22px_rgba(0,0,0,0.15)] hover:shadow-xl hover:dark:shadow-gray-800 transition-shadow duration-300 cursor-pointer"
             >
               {/* Icon section */}
               <div className="w-10 h-10 rounded-lg flex justify-center text-white">

@@ -6,7 +6,7 @@ import Darkmode from "../Darkmode/Darkmode";
 import { IoIosMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const MenuLinks = [
   {
@@ -44,6 +44,12 @@ const MenuLinks = [
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      color: isActive ? "#ebb741" : "",
+    };
+  };
+
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40">
       <div className="py-4">
@@ -56,9 +62,9 @@ function Navbar() {
             >
               Dhanwis
             </a> */}
-            <Link to="/">
+            <NavLink to="/">
               <img src={logo} alt="" width={"120px"} />
-            </Link>
+            </NavLink>
 
             {/* Menu Items */}
             <div>
@@ -69,12 +75,13 @@ function Navbar() {
               >
                 {MenuLinks.map((menu, index) => (
                   <li key={index}>
-                    <Link
+                    <NavLink
                       to={menu.link}
-                      className="inline-block px-4 py-2 lg:py-0 font-semibold text-grey-500 hover:text-primary dark:hover-text-white"
+                      className="inline-block px-4 py-2 lg:py-0 font-bold text-grey-500 hover:text-primary dark:hover-text-white"
+                      style={navLinkStyles}
                     >
                       {menu.name}
-                    </Link>
+                    </NavLink>
                   </li>
                 ))}
               </ul>

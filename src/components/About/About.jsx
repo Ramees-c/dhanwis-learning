@@ -19,7 +19,7 @@ function About() {
             <h1 className="uppercase font-bold text-2xl xl:text-4xl text-primary font-titleFont">
               Achieve your Goals with Dhanwis
             </h1>
-            <p className="font-semibold mt-3 text-sm lg:text-xl">
+            <p className="font-semibold mt-3 text-sm lg:text-xl text-black/85 dark:text-white">
               Whether you're looking to enhance your technical skills or drive
               your business forward with cutting-edge IT solutions, we are here
               to help you achieve your goals.
@@ -47,7 +47,7 @@ function About() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Facilis, impedit.
               </h1>
-              <p className="mb-5 text-justify">
+              <p className="mb-5 text-justify text-black/85 dark:text-white">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
                 laudantium ullam vero! Fugit obcaecati praesentium error facere
                 omnis ipsa eveniet laudantium perferendis. Alias, quam maxime,

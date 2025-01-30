@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import './App.css'
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
@@ -10,6 +11,7 @@ import "aos/dist/aos.css";
 
 // react router dom
 import { Routes, Route } from "react-router-dom";
+import CoursesPage from "./pages/CoursesPage/CoursesPage";
 
 function App() {
   useEffect(() => {
@@ -28,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/courses" element={<CoursesPage />} />
       </Routes>
 
       <Footer />

@@ -61,13 +61,13 @@ function Hero() {
                     <h1 data-aos="zoom-out"
                     data-aos-duration="500"
                     data-aos-once="true"
-                    className="text-1xl sm:text-6xl lg-text-1xl font-bold text-primary">
+                    className="text-1xl sm:text-5xl lg-text-1xl font-bold text-primary">
                       {data.subtitle}
                     </h1>
                     <h1 data-aos="zoom-out"
                     data-aos-duration="500"
                     data-aos-once="true" 
-                    className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-5">
+                    className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3">
                       {data.title}
                     </h1>
                     <h1 data-aos="zoom-out"

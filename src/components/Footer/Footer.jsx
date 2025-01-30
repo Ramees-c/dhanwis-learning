@@ -9,6 +9,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa6";
 import { FaMobileAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const FooterLinks = [
@@ -20,27 +21,27 @@ function Footer() {
     {
       id: 2,
       title: "About",
-      path: "/",
+      path: "/about",
     },
     {
       id: 3,
       title: "Courses",
-      path: "/",
+      path: "/courses",
     },
     {
       id: 4,
       title: "Gallery",
-      path: "/",
+      path: "/gallery",
     },
     {
       id: 5,
       title: "Careers",
-      path: "/",
+      path: "/careers",
     },
     {
       id: 6,
       title: "Contact",
-      path: "/",
+      path: "/contact",
     },
   ];
 
@@ -50,9 +51,9 @@ function Footer() {
         <div className="grid lg:grid-cols-3 pb-20 pt-5">
           {/* Company details */}
           <div className=" py-8 px-4">
-            <a href="">
+            <Link to="/">
               <img width="120px" src={logo} alt="" />
-            </a>
+            </Link>
             <p className="text-gray-700 dark:text-white/70 lg:pr-24 pt-3">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
               nihil iusto dolores aliquid sit!
@@ -61,18 +62,18 @@ function Footer() {
           {/* Footer links */}
           <div className="col-span-2 grid grid-cols-1 sm:grid-cols-2 md:pl-10">
             <div className="py-8 px-4">
-              <h1 className="text-xl font-bold sm:text-left mb-3">
+              <h1 className="text-xl font-bold sm:text-left mb-3 text-black/85 dark:text-white">
                 Quick Links
               </h1>
               <ul className="space-y-3">
                 {FooterLinks.map((link) => (
                   <li key={link.id}>
-                    <a
-                      className="text-gray-700 hue-rotate-30 hover:dark:text-white dark:text-gray-400 hover:text-black duration-300 "
-                      href=""
+                    <Link
+                      className="hover:text-primary duration-300 font-semibold "
+                      to={link.path}
                     >
                       {link.title}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -99,7 +100,7 @@ function Footer() {
 
             {/* Company address */}
             <div className="py-8 px-2 col-span-2 sm:col-auto">
-              <h1 className="text-xl font-bold sm:text-left mb-3">Address</h1>
+              <h1 className="text-xl font-bold sm:text-left mb-3 text-black/85 dark:text-white">Address</h1>
               <div>
                 <div className="flex items-center gap-4">
                   <FaLocationArrow className="text-xl text-primary" />
@@ -144,3 +145,7 @@ function Footer() {
 }
 
 export default Footer;
+
+
+
+

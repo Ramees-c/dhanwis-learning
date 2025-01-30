@@ -10,7 +10,7 @@ function Courses() {
           <h1 className="uppercase font-bold text-2xl xl:text-4xl text-primary font-titleFont">
             Our Offline Courses are out of The ordinary
           </h1>
-          <p className="font-semibold text-sm lg:text-xl">
+          <p className="font-semibold text-sm lg:text-xl text-black/85 dark:text-white">
             You don't have to struggle alone, you've got our assistance and
             help.
           </p>
