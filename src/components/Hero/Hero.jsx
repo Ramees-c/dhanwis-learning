@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 
-import slider_img_1 from "../../assets/images/hero/banner_img_2.png";
+import slider_img_1 from "../../assets/images/hero/banner3_img.png";
 import Button from "../Shared/Button";
 
 const HeroData = [
@@ -97,7 +97,7 @@ function Hero() {
                       <img
                         src={data.img}
                         alt=""
-                        className=" mb-5 lg:mb-0 w-[400px] h-[200px] md:h-[500px] sm-h-[450px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]"
+                        className=" mb-5 lg:mb-0 w-[400px] h-[200px] md:h-[500px] sm-h-[450px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto"
                       />
                     </div>
                   </div>
