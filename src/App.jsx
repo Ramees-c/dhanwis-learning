@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import { Routes, Route } from "react-router-dom";
 import CoursesPage from "./pages/CoursesPage/CoursesPage";
 import GalleryPage from "./pages/GalleryPage/GalleryPage";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 function App() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/gallery" element={<GalleryPage/>} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
 
       <Footer />

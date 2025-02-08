@@ -5,6 +5,7 @@ import { GrYoga } from "react-icons/gr";
 import { FaDumbbell } from "react-icons/fa6";
 import { GiGymBag } from "react-icons/gi";
 import AboutPageAboutSection from "../../components/AboutPageAboutSection/AboutPageAboutSection";
+import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon"
 
 function AboutPage() {
   const ServiceData = [
@@ -70,6 +71,9 @@ function AboutPage() {
           ))}
         </div>
       </div>
+
+      {/* Whatsapp icon */}
+      <WhatsappIcon />
     </div>
   );
 }

@@ -43,11 +43,11 @@ function About() {
             data-aos="fade-left"
             data-aos-duration="500"
             className="basis-[45%] ml-0 xl:ml-10">
-              <h1 className="uppercase font-semibold text-2xl text-justify text-primary mb-1">
+              <h1 className="uppercase font-semibold text-2xl text-primary mb-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Facilis, impedit.
               </h1>
-              <p className="mb-5 text-justify text-black/85 dark:text-white">
+              <p className="mb-5 text-black/85 dark:text-white">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
                 laudantium ullam vero! Fugit obcaecati praesentium error facere
                 omnis ipsa eveniet laudantium perferendis. Alias, quam maxime,

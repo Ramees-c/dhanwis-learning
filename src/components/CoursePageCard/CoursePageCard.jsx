@@ -13,7 +13,8 @@ function CoursePageCard() {
       title2: "Lesson Packages",
       title3: "Flexible Scheduling",
       title4: "Dang this much!",
-      title5: "Something else cool"
+      title5: "Something else cool",
+      aosDelay: "0",
     },
     {
       course: "MERN",
@@ -22,7 +23,8 @@ function CoursePageCard() {
       title2: "Lesson Packages",
       title3: "Flexible Scheduling",
       title4: "Dang this much!",
-      title5: "Something else cool"
+      title5: "Something else cool",
+      aosDelay: "200",
     },
     {
       course: "PYTHON",
@@ -31,7 +33,8 @@ function CoursePageCard() {
       title2: "Lesson Packages",
       title3: "Flexible Scheduling",
       title4: "Dang this much!",
-      title5: "Something else cool"
+      title5: "Something else cool",
+      aosDelay: "400",
     },
     {
       course: "Digital Marketting",
@@ -40,7 +43,8 @@ function CoursePageCard() {
       title2: "Lesson Packages",
       title3: "Flexible Scheduling",
       title4: "Dang this much!",
-      title5: "Something else cool"
+      title5: "Something else cool",
+      aosDelay: "600",
     },
     
   ]
@@ -52,7 +56,9 @@ function CoursePageCard() {
 
        {
         CardData.map((data,index) => (
-          <div key={index} className="h-full shadow-xl rounded-3xl hero-bg-color overflow-hidden hover:shadow-2xl hover:dark:shadow-gray-800 transition-shadow duration-300">
+          <div  data-aos="fade-up"
+          data-aos-delay="{data.aosDelay}"
+          key={index} className="h-full shadow-xl rounded-3xl hero-bg-color overflow-hidden hover:shadow-2xl hover:dark:shadow-gray-800 transition-shadow duration-300">
           <header>
           <img
               src={data.image}

@@ -1,6 +1,7 @@
 import React from 'react'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import CoursePageCard from '../../components/CoursePageCard/CoursePageCard'
+import WhatsappIcon from '../../components/WhatsappIcon/WhatsappIcon'
 
 function CoursesPage() {
   return (
@@ -13,6 +14,9 @@ function CoursesPage() {
             <CoursePageCard />
             </div>
         </div>
+
+        {/* Whatsapp icon */}
+        <WhatsappIcon />
     </div>
   )
 }

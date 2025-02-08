@@ -79,6 +79,7 @@ function Navbar() {
                       to={menu.link}
                       className="inline-block px-4 py-2 lg:py-0 font-bold text-grey-500 hover:text-primary dark:hover-text-white"
                       style={navLinkStyles}
+                      onClick={()=>setIsOpen(false)}
                     >
                       {menu.name}
                     </NavLink>
