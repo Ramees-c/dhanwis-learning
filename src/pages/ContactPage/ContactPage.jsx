@@ -84,7 +84,7 @@ function ContactPage() {
         </div>
 
         {/* Google map section */}
-        <section className="py-20 px-5">
+        <section className="py-20">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold text-primary font-titleFont mb-10">
               CONTACT ADDRESS
@@ -107,7 +107,11 @@ function ContactPage() {
                 ></iframe>
               </div>
 
-              <div className="basis-[50%] ml-0 xl:ml-10 w-full">
+              <div
+                className="basis-[50%] ml-0 xl:ml-10 w-full"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
                 <div className="max-w-lg mx-auto p-6 text-justify hero-bg-color shadow-lg rounded-3xl">
                   <div className="space-y-4">
                     <div>
@@ -124,13 +128,16 @@ function ContactPage() {
                       </p>
                     </div>
                     <div>
-                      <p className="text-black/85 dark:text-white text-sm font-medium">
+                      <p className="text-black/85 dark:text-white ">
                         info@dhanwis.com
                       </p>
                     </div>
                     <div>
-                      <p className="text-black/85 dark:text-white text-sm font-medium">
-                        +91 8075487219, +91 9961487219, +91 9946487219
+                      <p className="text-black/85 dark:text-white ">
+                        +91 8075487219, +91 9961487219,
+                      </p>
+                      <p className="text-black/85 dark:text-white mt-2">
+                        +91 9946487219
                       </p>
                     </div>
 

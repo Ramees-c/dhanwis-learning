@@ -51,6 +51,10 @@ function Footer() {
     };
   };
 
+  const handleClick = () => {
+    window.scrollTo(0,0)
+  }
+
   return (
     <div className="hero-bg-color rounded-t-3xl">
       <div className="container">
@@ -78,6 +82,7 @@ function Footer() {
                       to={link.path}
                       className="hover:text-primary duration-300 font-semibold "
                       style={FooterLinkStyles}
+                      onClick={handleClick}
                     >
                       {link.title}
                     </NavLink>
