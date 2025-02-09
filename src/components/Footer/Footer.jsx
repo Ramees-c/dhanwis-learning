@@ -9,7 +9,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa6";
 import { FaMobileAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Footer() {
   const FooterLinks = [
@@ -45,6 +45,12 @@ function Footer() {
     },
   ];
 
+  const FooterLinkStyles = ({ isActive }) => {
+    return {
+      color: isActive ? "#ebb741" : "",
+    };
+  };
+
   return (
     <div className="hero-bg-color rounded-t-3xl">
       <div className="container">
@@ -68,12 +74,13 @@ function Footer() {
               <ul className="space-y-3">
                 {FooterLinks.map((link) => (
                   <li key={link.id}>
-                    <Link
-                      className="hover:text-primary duration-300 font-semibold "
+                    <NavLink 
                       to={link.path}
+                      className="hover:text-primary duration-300 font-semibold "
+                      style={FooterLinkStyles}
                     >
                       {link.title}
-                    </Link>
+                    </NavLink>
                   </li>
                 ))}
               </ul>

@@ -4,6 +4,7 @@ import Button from "../../components/Shared/Button";
 
 import contact_img from "../../assets/images/contact/contact_img_1.jpg";
 import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 function ContactPage() {
   return (
@@ -32,27 +33,27 @@ function ContactPage() {
             <img src={contact_img} alt="image" className="rounded-lg w-full" />
           </div>
           <form
-            className="basis-[50%] ml-0 xl:ml-10"
+            className="basis-[50%] ml-0 xl:ml-10 w-full"
             data-aos="fade-left"
             data-aos-duration="500"
           >
-             <div className="flex flex-col mb-5">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="enter name"
-                  className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
-                />
-              </div>
+            <div className="flex flex-col mb-5">
+              <input
+                type="text"
+                name="name"
+                placeholder="enter name"
+                className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
+              />
+            </div>
 
-              <div className="flex flex-col mb-5">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="enter email"
-                  className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
-                />
-              </div>
+            <div className="flex flex-col mb-5">
+              <input
+                type="email"
+                name="email"
+                placeholder="enter email"
+                className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
+              />
+            </div>
 
             <div className="flex flex-col mb-8">
               <input
@@ -83,29 +84,70 @@ function ContactPage() {
         </div>
 
         {/* Google map section */}
-        <section className="py-10 px-5">
+        <section className="py-20 px-5">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold text-primary mb-6">
-              Our Location
+            <h2 className="text-3xl font-bold text-primary font-titleFont mb-10">
+              CONTACT ADDRESS
             </h2>
-            <p className="text-lg text-black/85 dark:text-white mb-8">
-              Find us at the address below.
-            </p>
 
-            <div
-              className="w-full h-96 rounded-lg shadow-lg overflow-hidden"
-              data-aos="fade-up"
-              data-aos-duration="500"
-            >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.398985695801!2d75.36439267486898!3d11.877281537925048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43dda7e747ddf%3A0xc606347cd29e5d35!2sDHANWIS%20Learning%20Hub%20%7C%20React%20Js%20%7C%20Flutter%20%7C%20Python%20%7C%20Mernstack%20%7C%20Projects%20%7C%20internship%20Training%20in%20Kannur%20%7C%20Kerala!5e0!3m2!1sen!2sin!4v1738922991940!5m2!1sen!2sin"
-                width="100%"
-                height="300"
-                style={{ border: 0 }}
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <div className="max-w-[1320px] flex xl:flex-row flex-col justify-center items-center">
+              <div
+                className="basis-[50%] w-full mb-10 xl:mb-0"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.398985695801!2d75.36439267486898!3d11.877281537925048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43dda7e747ddf%3A0xc606347cd29e5d35!2sDHANWIS%20Learning%20Hub%20%7C%20React%20Js%20%7C%20Flutter%20%7C%20Python%20%7C%20Mernstack%20%7C%20Projects%20%7C%20internship%20Training%20in%20Kannur%20%7C%20Kerala!5e0!3m2!1sen!2sin!4v1738922991940!5m2!1sen!2sin"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <div className="basis-[50%] ml-0 xl:ml-10 w-full">
+                <div className="max-w-lg mx-auto p-6 text-justify hero-bg-color shadow-lg rounded-3xl">
+                  <div className="space-y-4">
+                    <div>
+                      <p className="font-bold text-primary">Dhanwis Academy</p>
+                    </div>
+                    <div>
+                      <p className="text-black/85 dark:text-white">
+                        TKH Building, Opp Jawahar Library, Yogasala Road,
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-black/85 dark:text-white">
+                        Kannur - 670001
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-black/85 dark:text-white text-sm font-medium">
+                        info@dhanwis.com
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-black/85 dark:text-white text-sm font-medium">
+                        +91 8075487219, +91 9961487219, +91 9946487219
+                      </p>
+                    </div>
+
+                    <div className="flex items-center gap-7 mt-6">
+                      <a href="">
+                        <FaInstagram className="text-2xl hover:text-primary duration-300" />
+                      </a>
+                      <a href="">
+                        <FaFacebook className="text-2xl hover:text-primary duration-300" />
+                      </a>
+                      <a href="">
+                        <FaWhatsapp className="text-2xl hover:text-primary duration-300" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -119,65 +161,20 @@ function ContactPage() {
 
 export default ContactPage;
 
-
-
-
-
-{/* <div className="flex flex-col xl:flex-row justify-between w-full pt-20 pb-20">
-          <div
-            className="w-full xl:w-2/5 space-y-5 mb-7 xl:mb-0"
-            data-aos="fade-right"
-            data-aos-duration="500"
-          >
-            <img src={contact_img} alt="image" className="rounded-lg w-full" />
-          </div>
-          <form
-            className="w-full xl:w-2/4"
-            data-aos="fade-left"
-            data-aos-duration="500"
-          >
-             <div className="flex flex-col mb-5">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="enter name"
-                  className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
-                />
-              </div>
-
-              <div className="flex flex-col mb-5">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="enter email"
-                  className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
-                />
-              </div>
-
-            <div className="flex flex-col mb-8">
-              <input
-                type="number"
-                name="number"
-                placeholder="enter contact number"
-                className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
-              />
-            </div>
-
-            <div className="flex flex-col mb-8">
-              <textarea
-                rows="3"
-                cols="20"
-                className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
-                placeholder="message"
-              ></textarea>
-            </div>
-
-            <div className="flex flex-row justify-center">
-              <Button
-                text="Send Message"
-                bgColor="bg-primary"
-                textColor="text-black"
-              />
-            </div>
-          </form>
-        </div> */}
+{
+  /* <div
+              className="w-full h-96 rounded-lg shadow-lg overflow-hidden"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.398985695801!2d75.36439267486898!3d11.877281537925048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43dda7e747ddf%3A0xc606347cd29e5d35!2sDHANWIS%20Learning%20Hub%20%7C%20React%20Js%20%7C%20Flutter%20%7C%20Python%20%7C%20Mernstack%20%7C%20Projects%20%7C%20internship%20Training%20in%20Kannur%20%7C%20Kerala!5e0!3m2!1sen!2sin!4v1738922991940!5m2!1sen!2sin"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div> */
+}
