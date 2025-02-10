@@ -1,34 +1,36 @@
 import React from "react";
 
-import { GrYoga } from "react-icons/gr";
-import { FaDumbbell } from "react-icons/fa6";
-import { GiGymBag } from "react-icons/gi";
+import { PiChalkboardTeacherDuotone } from "react-icons/pi";
+import { LiaUserFriendsSolid } from "react-icons/lia";
+import { FaHandsHelping } from "react-icons/fa";
+import { BsPersonWorkspace } from "react-icons/bs";
+
 
 const ServiceData = [
   {
     id: 1,
-    icon: <GrYoga className="bg-[#0062ff]" />,
+    icon: <PiChalkboardTeacherDuotone className="bg-[#0062ff]" />,
     title: "Real time Industry based training",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quibusdam sapiente dolorum cum ea dicta quos? Quibusdam exercitationem voluptates corrupti?",
     aosDelay: "0",
   },
   {
     id: 2,
-    icon: <FaDumbbell className="bg-[#73bc00]" />,
+    icon: <LiaUserFriendsSolid className="bg-[#73bc00]" />,
     title: "1 to 1 Support",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quibusdam sapiente dolorum cum ea dicta quos? Quibusdam exercitationem voluptates corrupti?",
     aosDelay: "200",
   },
   {
     id: 3,
-    icon: <GiGymBag className="bg-[#fa6400]" />,
+    icon: <FaHandsHelping className="bg-[#fa6400]" />,
     title: "Job Placement assistance",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quibusdam sapiente dolorum cum ea dicta quos? Quibusdam exercitationem voluptates corrupti?",
     aosDelay: "400",
   },
   {
     id: 4,
-    icon: <GiGymBag className="bg-[#fe6baa]" />,
+    icon: <BsPersonWorkspace className="bg-[#fe6baa]" />,
     title: "Extra skill Development training",
     desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quibusdam sapiente dolorum cum ea dicta quos? Quibusdam exercitationem voluptates corrupti?",
     aosDelay: "600",
