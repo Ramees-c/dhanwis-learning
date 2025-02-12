@@ -115,22 +115,26 @@ function ContactPage() {
                 <div className="max-w-lg mx-auto p-6 text-justify hero-bg-color shadow-lg rounded-3xl">
                   <div className="space-y-4">
                     <div>
-                      <p className="font-bold text-primary text-lg">Dhanwis Academy</p>
+                      <p className="font-bold text-primary text-lg">
+                        Dhanwis Academy
+                      </p>
                     </div>
                     <div>
                       <p className="text-black/85 dark:text-white text-left">
-                        TKH Building, Opp Jawahar Library, 
+                        TKH Building, Opp Jawahar Library,
                       </p>
-                      <p className="text-black/85 dark:text-white mt-2">Yogasala Road,</p>
-                      <p className="text-black/85 dark:text-white mt-2">Kannur - 670001</p>
+                      <p className="text-black/85 dark:text-white mt-2">
+                        Yogasala Road,
+                      </p>
+                      <p className="text-black/85 dark:text-white mt-2">
+                        Kannur - 670001
+                      </p>
                       <p className="text-black/85 dark:text-white mt-2">
                         info@dhanwis.com
                       </p>
                     </div>
-                   
-                    <div>
-                      
-                    </div>
+
+                    <div></div>
                     <div>
                       <p className="text-black/85 dark:text-white ">
                         +91 8075487219, +91 9961487219,
