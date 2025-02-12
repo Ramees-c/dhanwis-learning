@@ -10,28 +10,21 @@ function FaqComponent() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa itaque sit excepturi quibusdam. Odit, dicta explicabo quas eum fugiat, molestias perferendis voluptas doloremque officiis ipsa adipisci consectetur sit totam.",
     },
     {
-      id: 1,
+      id: 2,
       question:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, alias?",
       answer:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa itaque sit excepturi quibusdam. Odit, dicta explicabo quas eum fugiat, molestias perferendis voluptas doloremque officiis ipsa adipisci consectetur sit totam.",
     },
     {
-      id: 1,
+      id: 3,
       question:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, alias?",
       answer:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa itaque sit excepturi quibusdam. Odit, dicta explicabo quas eum fugiat, molestias perferendis voluptas doloremque officiis ipsa adipisci consectetur sit totam.",
     },
     {
-      id: 1,
-      question:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, alias?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa itaque sit excepturi quibusdam. Odit, dicta explicabo quas eum fugiat, molestias perferendis voluptas doloremque officiis ipsa adipisci consectetur sit totam.",
-    },
-    {
-      id: 1,
+      id: 4,
       question:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, alias?",
       answer:

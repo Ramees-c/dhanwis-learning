@@ -10,6 +10,13 @@ import img5 from "../../assets/images/gallery/g5.jpg";
 import spinner from "../../assets/images/loading_spinner/loading_spinner.gif";
 import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
 
+import LightGallery from "lightgallery/react";
+
+// import styles light gallery
+import "lightgallery/css/lightgallery.css";
+import "lightgallery/css/lg-zoom.css";
+import "lightgallery/css/lg-thumbnail.css";
+
 function GalleryPage() {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -32,15 +39,16 @@ function GalleryPage() {
         <PageHeader title="Gallery" />
 
         <div className="columns-1 sm:columns-2 lg:columns-3 py-10 md:py-20 gap-4">
-          {Images.map((image, index) => (
-            <div key={index} className="mb-4 break-inside-avoid">
+          <LightGallery speed={500} plugins={[]} mode="lg-fade" download={false}>
+            {Images.map((image, index) => (
               <img
+                key={index}
                 src={image}
                 alt="image"
-                className="w-full object-cover rounded-lg cursor-pointer hover:scale-110 duration-300"
+                className="w-full object-cover rounded-lg cursor-pointer h-full mb-4 break-inside-avoid"
               />
-            </div>
-          ))}
+            ))}
+          </LightGallery>
         </div>
       </div>
 
