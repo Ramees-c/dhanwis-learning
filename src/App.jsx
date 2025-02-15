@@ -14,6 +14,7 @@ import { Routes, Route } from "react-router-dom";
 import CoursesPage from "./pages/CoursesPage/CoursesPage";
 import GalleryPage from "./pages/GalleryPage/GalleryPage";
 import ContactPage from "./pages/ContactPage/ContactPage";
+import CareerPage from "./pages/CareerPage/CareerPage";
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/courses" element={<CoursesPage />} />
         <Route path="/gallery" element={<GalleryPage/>} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/careers" element={<CareerPage />} />
       </Routes>
 
       <Footer />

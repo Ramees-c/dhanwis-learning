@@ -4,6 +4,7 @@ import flutter_img from "../../assets/images/courses/flutter1.jpg";
 import mern_img from "../../assets/images/courses/mern3.jpg";
 import python_img from "../../assets/images/courses/python1.png";
 import digital_img from "../../assets/images/courses/digital.jpg";
+import { Link } from "react-router-dom";
 
 function CourseCard() {
   const CourseData = [
@@ -27,6 +28,7 @@ function CourseCard() {
       image: flutter_img,
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, soluta.",
       aosDelay: "400",
+
     },
     {
       id: 4,
@@ -36,6 +38,10 @@ function CourseCard() {
       aosDelay: "600",
     },
   ];
+
+  const handleClick = () => {
+    window.scrollTo(0,0)
+  }
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-5 place-items-center">
@@ -56,9 +62,9 @@ function CourseCard() {
               <h1 className="text-2xl font-bold mb-3">{data.course}</h1>
               <p className="leading-relaxed mb-3">{data.desc}</p>
               <div className="flex items-end flex-wrap justify-center">
-                <a href="" className="text-primary md:mb-2 lg:mb-0 font-bold">
+                <Link to="/courses" className="text-primary md:mb-2 lg:mb-0 font-bold" onClick={handleClick}>
                   Learn More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

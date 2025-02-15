@@ -8,7 +8,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 function About() {
 
-  const navigate = useNavigate();
+  const handleClick = () => {
+    window.scrollTo(0,0)
+  }
 
   return (
     <div>
@@ -47,7 +49,7 @@ function About() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Facilis, impedit.
               </h1>
-              <p className="mb-5 text-black/85 dark:text-white">
+              <p className="mb-5 text-black/85 dark:text-white text-justify [word-spacing:0.1rem]	">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
                 laudantium ullam vero! Fugit obcaecati praesentium error facere
                 omnis ipsa eveniet laudantium perferendis. Alias, quam maxime,
@@ -83,12 +85,11 @@ function About() {
           data-aos-duration="500"
           data-aos-delay="300"
           className="flex justify-center mt-5">
-            <Link to='/about'>
+            <Link to='/about' onClick={handleClick}>
             <Button
               text="View More"
               bgColor="bg-primary"
               textColor="text-black" 
-              
             />
             </Link>
           </div>

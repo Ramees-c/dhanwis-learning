@@ -44,7 +44,7 @@ function AboutPageAboutSection() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Facilis, impedit.
               </h1>
-              <p className="mb-5 text-black/85 dark:text-white">
+              <p className="mb-5 text-black/85 dark:text-white text-justify [word-spacing:0.1rem]">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
                 laudantium ullam vero! Fugit obcaecati praesentium error facere
                 omnis ipsa eveniet laudantium perferendis. Alias, quam maxime,
@@ -87,7 +87,7 @@ function AboutPageAboutSection() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Facilis, impedit.
               </h1>
-              <p className="mb-5 text-black/85 dark:text-white">
+              <p className="mb-5 text-black/85 dark:text-white text-justify [word-spacing:0.1rem]">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
                 laudantium ullam vero! Fugit obcaecati praesentium error facere
                 omnis ipsa eveniet laudantium perferendis. Alias, quam maxime,
