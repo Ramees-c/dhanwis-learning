@@ -1,41 +1,40 @@
 import React from "react";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
-import { GrYoga } from "react-icons/gr";
-import { FaDumbbell } from "react-icons/fa6";
-import { GiGymBag } from "react-icons/gi";
+import { TbDeviceVisionPro } from "react-icons/tb";
 import AboutPageAboutSection from "../../components/AboutPageAboutSection/AboutPageAboutSection";
-import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon"
-import CallIcon from "../../components/CallIcon/CallIcon"
+import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
+import CallIcon from "../../components/CallIcon/CallIcon";
+import { FaHandsHelping, FaRoute, FaTrophy } from "react-icons/fa";
 
 function AboutPage() {
   const ServiceData = [
     {
       id: 1,
-      icon: <GrYoga className="bg-[#0062ff]" />,
+      icon: <TbDeviceVisionPro className="bg-[#0062ff]" />,
       title: "Vision",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quibusdam sapiente dolorum cum ea dicta quos? Quibusdam exercitationem voluptates corrupti?",
+      desc: "Empowering aspiring IT professionals with cutting-edge skills, industry knowledge, and hands-on training for a successful digital future.",
       aosDelay: "0",
     },
     {
       id: 2,
-      icon: <FaDumbbell className="bg-[#73bc00]" />,
-      title: "1 to 1 Support",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quibusdam sapiente dolorum cum ea dicta quos? Quibusdam exercitationem voluptates corrupti?",
+      icon: <FaTrophy className="bg-[#73bc00]" />,
+      title: "Mission",
+      desc: "Our mission is to provide industry-focused IT training, hands-on experience, and career support to build future-ready professionals.",
       aosDelay: "200",
     },
     {
       id: 3,
-      icon: <GiGymBag className="bg-[#fa6400]" />,
-      title: "Job Placement assistance",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quibusdam sapiente dolorum cum ea dicta quos? Quibusdam exercitationem voluptates corrupti?",
+      icon: <FaRoute className="bg-[#fa6400]" />,
+      title: "Educational Approach",
+      desc: "Flexible learning, hands-on training, real-world projects, skill assessments, and access to industry-standard tools for career growth.",
       aosDelay: "400",
     },
     {
       id: 4,
-      icon: <GiGymBag className="bg-[#fe6baa]" />,
-      title: "Extra skill Development training",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quibusdam sapiente dolorum cum ea dicta quos? Quibusdam exercitationem voluptates corrupti?",
+      icon: <FaHandsHelping className="bg-[#fe6baa]" />,
+      title: "Career Development & Support",
+      desc: "Earn industry-recognized certifications, get resume and interview support, internships, job-focused training, and network with IT professionals.",
       aosDelay: "600",
     },
   ];
@@ -65,7 +64,7 @@ function AboutPage() {
                 <div className="text-4xl">{data.icon}</div>
               </div>
               <p className="font-semibold">{data.title}</p>
-              <p className="text-sm text-gray-500 dark:text-white/70">
+              <p className="text-sm text-gray-500 dark:text-white/70 text-justify [word-spacing:0px]">
                 {data.desc}
               </p>
             </div>
