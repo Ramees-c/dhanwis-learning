@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import CareersCard from "../../components/CareersCard/CareersCard";
 import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
+import CallIcon from "../../components/CallIcon/CallIcon";
 
 function CareerPage() {
   const jobOpenings = [
@@ -52,6 +53,9 @@ function CareerPage() {
 
       {/* Whatsapp icon */}
       <WhatsappIcon />
+
+      {/* Call Icon */}
+      <CallIcon />
     </div>
   );
 }

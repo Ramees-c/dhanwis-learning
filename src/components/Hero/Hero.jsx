@@ -15,21 +15,21 @@ const HeroData = [
   },
 
   {
-    id: 1,
+    id: 2,
     img: slider_img_1,
-    subtitle: "Learn & Achieve",
-    title: "Discover the perfect mentor for you.",
+    subtitle: "Unlock Your Future",
+    title: "Learn from industry leaders.",
     description:
-      "Connect with us and cultural institutions sharing their experience.",
+      "Reach your career goals with a supportive growth community.",
   },
 
   {
-    id: 1,
+    id: 3,
     img: slider_img_1,
-    subtitle: "Learn & Achieve",
-    title: "Discover the perfect mentor for you.",
+    subtitle: "From Beginner to Pro",
+    title: "Start Your IT Career with Confidence.",
     description:
-      "Connect with us and cultural institutions sharing their experience.",
+      "Build a strong foundation for a rewarding career in IT.",
   },
 ];
 

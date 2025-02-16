@@ -16,6 +16,7 @@ import LightGallery from "lightgallery/react";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
+import CallIcon from "../../components/CallIcon/CallIcon";
 
 function GalleryPage() {
   const [isLoading, setIsLoading] = useState(false);
@@ -54,6 +55,9 @@ function GalleryPage() {
 
       {/* Gallery Page */}
       <WhatsappIcon />
+
+      {/* Call Icon */}
+      <CallIcon />
     </div>
   );
 }

@@ -6,7 +6,7 @@ function WhatsappIcon() {
   return (
     <div>
         <a href=""
-        className='fixed bottom-5 right-5'
+        className='fixed bottom-20 right-3'
         >
             <img src={whatsapp_icon} alt="whatsapp" width="90" />
         </a>

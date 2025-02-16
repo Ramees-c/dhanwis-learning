@@ -5,6 +5,7 @@ import Button from "../../components/Shared/Button";
 import contact_img from "../../assets/images/contact/contact_img_1.jpg";
 import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import CallIcon from "../../components/CallIcon/CallIcon";
 
 function ContactPage() {
   return (
@@ -165,6 +166,9 @@ function ContactPage() {
 
       {/* Whtasapp icon */}
       <WhatsappIcon />
+
+      {/* Call Icon */}
+      <CallIcon />
     </div>
   );
 }

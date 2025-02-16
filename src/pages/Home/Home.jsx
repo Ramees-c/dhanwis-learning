@@ -6,6 +6,7 @@ import Courses from "../../components/Courses/Courses";
 import Testimonials from "../../components/Testimonials/Testimonials";
 import FaqComponent from "../../components/FaqComponent/FaqComponent";
 import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
+import CallIcon from "../../components/CallIcon/CallIcon";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <Testimonials />
       <FaqComponent />
       <WhatsappIcon />
+      <CallIcon />
     
     </div>
   );
