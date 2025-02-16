@@ -11,7 +11,7 @@ const ServiceData = [
     id: 1,
     icon: <PiChalkboardTeacherDuotone className="bg-[#0062ff]" />,
     title: "Real time Industry based training",
-    desc: "Real-time industry-based training enhances skills, bridges theory-practice gaps, and prepares professionals for real-world challenges effectively.",
+    desc: "Real-time industry-based training provides hands-on experience, practical skills, and live projects to prepare professionals for real-world challenges.",
     aosDelay: "0",
   },
   {

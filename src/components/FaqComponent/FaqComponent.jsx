@@ -5,30 +5,30 @@ function FaqComponent() {
     {
       id: 1,
       question:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, alias?",
+        " Are the courses beginner-friendly?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa itaque sit excepturi quibusdam. Odit, dicta explicabo quas eum fugiat, molestias perferendis voluptas doloremque officiis ipsa adipisci consectetur sit totam.",
+        "Yes, our courses are designed for beginners and professionals, covering fundamentals to advanced concepts with real-world projects.",
     },
     {
       id: 2,
       question:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, alias?",
+        "Do you offer certifications?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa itaque sit excepturi quibusdam. Odit, dicta explicabo quas eum fugiat, molestias perferendis voluptas doloremque officiis ipsa adipisci consectetur sit totam.",
+        "Yes, upon successful course completion, you will receive an industry-recognized certification.",
     },
     {
       id: 3,
       question:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, alias?",
+        "Do you provide online courses?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa itaque sit excepturi quibusdam. Odit, dicta explicabo quas eum fugiat, molestias perferendis voluptas doloremque officiis ipsa adipisci consectetur sit totam.",
+        "No, we only offer offline courses at our academy.",
     },
     {
       id: 4,
       question:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, alias?",
+        "Do you offer placement assistance?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa itaque sit excepturi quibusdam. Odit, dicta explicabo quas eum fugiat, molestias perferendis voluptas doloremque officiis ipsa adipisci consectetur sit totam.",
+        "Yes, we provide job placement support, including resume building and interview preparation.",
     },
   ];
 
@@ -61,7 +61,7 @@ function FaqComponent() {
               >
                 <h1 className="text-xl text-black/85 dark:text-white">{data.question}</h1>
                 <span
-                  className={`text-2xl ${
+                  className={`text-2xl text-primary font-bold ${
                     showSelectedQ === index ? "rotate-180" : ""
                   } ease-in-out duration-500`}
                 >
