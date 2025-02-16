@@ -1,9 +1,9 @@
 import React from "react";
 
-import flutter_img from "../../assets/images/courses/flutter1.jpg";
-import mern_img from "../../assets/images/courses/mern3.jpg";
-import python_img from "../../assets/images/courses/python1.png";
-import digital_img from "../../assets/images/courses/digital.jpg";
+import flutter_img from "../../assets/images/courses/1.png"
+import mern_img from "../../assets/images/courses/2.png";
+import python_img from "../../assets/images/courses/3.png";
+import digital_img from "../../assets/images/courses/4.png";
 import { Link } from "react-router-dom";
 
 function CourseCard() {
@@ -12,29 +12,29 @@ function CourseCard() {
       id: 1,
       course: "Flutter",
       image: flutter_img,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, soluta.",
+      desc: "Master Flutter development and build stunning cross-platform mobile apps.",
       aosDelay: "0",
     },
     {
       id: 2,
       course: "MERN",
-      image: flutter_img,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, soluta.",
+      image: mern_img,
+      desc: "Master MERN Stack: Build dynamic, full-stack web applications effortlessly.",
       aosDelay: "200",
     },
     {
       id: 3,
       course: "PYTHON",
-      image: flutter_img,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, soluta.",
+      image: python_img,
+      desc: "Master Python Full Stack Development with hands-on, industry-focused training.",
       aosDelay: "400",
 
     },
     {
       id: 4,
       course: "Digital Marketting",
-      image: flutter_img,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, soluta.",
+      image: digital_img,
+      desc: "Master digital marketing strategies to boost online presence and growth.",
       aosDelay: "600",
     },
   ];
