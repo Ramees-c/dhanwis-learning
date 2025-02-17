@@ -1,10 +1,9 @@
 import React from "react";
 
-import about_img1 from "../../assets/images/about/4.jpg"
-import about_img2 from "../../assets/images/about/2.jpg"
-import about_img3 from "../../assets/images/about/3.jpg"
-import about_img4 from "../../assets/images/about/1.jpg"
-
+import about_img1 from "../../assets/images/about/4.jpg";
+import about_img2 from "../../assets/images/about/2.jpg";
+import about_img3 from "../../assets/images/about/3.jpg";
+import about_img4 from "../../assets/images/about/1.jpg";
 
 import { FaCheckCircle } from "react-icons/fa";
 import Button from "../Shared/Button";
@@ -20,9 +19,10 @@ function AboutPageAboutSection() {
               Achieve your Goals with Dhanwis
             </h1>
             <p className="font-semibold mt-3 text-sm lg:text-xl text-black/85 dark:text-white">
-              Whether you're looking to enhance your technical skills or drive
-              your business forward with cutting-edge IT solutions, we are here
-              to help you achieve your goals.
+              Join our academy to master app development, web development, and
+              digital marketing. We provide expert-led training, hands-on
+              experience, and career guidance to help you succeed in the digital
+              industry.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ function AboutPageAboutSection() {
             <div
               data-aos="fade-left"
               data-aos-duration="500"
-              className="basis-[45%] mr-0 xl:mr-10"
+              className="basis-[45%] mr-0 xl:mr-10 "
             >
               <h1 className="uppercase font-semibold text-2xl text-primary mb-1">
                 Learn MERN Stack & Build Real-World Projects

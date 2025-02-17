@@ -43,7 +43,7 @@ function AboutPage() {
     <div>
       <div className="container">
         {/* Page header */}
-        <PageHeader title="About Us" />
+        <PageHeader title="About" />
       </div>
 
       <div className="mb-20">

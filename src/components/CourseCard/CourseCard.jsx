@@ -19,7 +19,7 @@ function CourseCard() {
       id: 2,
       course: "MERN",
       image: mern_img,
-      desc: "Master MERN Stack: Build dynamic, full-stack web applications effortlessly.",
+      desc: "Master MERN Stack and build dynamic, full-stack web applications effortlessly.",
       aosDelay: "200",
     },
     {

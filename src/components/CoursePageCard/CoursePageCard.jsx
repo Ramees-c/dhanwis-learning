@@ -1,6 +1,9 @@
 import React from "react";
 
-import flutter_img from "../../assets/images/courses/flutter1.jpg";
+import flutter_img from "../../assets/images/courses/1.png"
+import mern_img from "../../assets/images/courses/2.png";
+import python_img from "../../assets/images/courses/3.png";
+import digital_img from "../../assets/images/courses/4.png";
 
 
 function CoursePageCard() {
@@ -18,7 +21,7 @@ function CoursePageCard() {
     },
     {
       course: "MERN",
-      image: flutter_img,
+      image: mern_img,
       title1: "One-on-One Instruction",
       title2: "Lesson Packages",
       title3: "Flexible Scheduling",
@@ -28,7 +31,7 @@ function CoursePageCard() {
     },
     {
       course: "PYTHON",
-      image: flutter_img,
+      image: python_img,
       title1: "One-on-One Instruction",
       title2: "Lesson Packages",
       title3: "Flexible Scheduling",
@@ -38,7 +41,7 @@ function CoursePageCard() {
     },
     {
       course: "Digital Marketting",
-      image: flutter_img,
+      image: digital_img,
       title1: "One-on-One Instruction",
       title2: "Lesson Packages",
       title3: "Flexible Scheduling",

@@ -1,7 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 
-import slider_img_1 from "../../assets/images/hero/banner3_img.png";
+import slider_img_1 from "../../assets/images/hero/bannner_image4.png";
+import slider_img_2 from "../../assets/images/hero/banner_img5.png"
+import slider_img_3 from "../../assets/images/hero/nanner_image5.png"
 import Button from "../Shared/Button";
 
 const HeroData = [
@@ -16,7 +18,7 @@ const HeroData = [
 
   {
     id: 2,
-    img: slider_img_1,
+    img: slider_img_2,
     subtitle: "Unlock Your Future",
     title: "Learn from industry leaders.",
     description:
@@ -25,7 +27,7 @@ const HeroData = [
 
   {
     id: 3,
-    img: slider_img_1,
+    img: slider_img_3,
     subtitle: "From Beginner to Pro",
     title: "Start Your IT Career with Confidence.",
     description:
