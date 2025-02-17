@@ -1,10 +1,8 @@
 import React from "react";
 
-import sruthi_profile from "../../assets/images/testimonials/sruthi.jpeg"
-import adarsh_profile from "../../assets/images/testimonials/adarsh.jpg"
-import vaishnav_profile from "../../assets/images/testimonials/vaishanav.jpg"
-
-
+import sruthi_profile from "../../assets/images/testimonials/sruthi.jpeg";
+import adarsh_profile from "../../assets/images/testimonials/adarsh.jpg";
+import vaishnav_profile from "../../assets/images/testimonials/vaishanav.jpg";
 
 import Slider from "react-slick";
 
@@ -63,9 +61,8 @@ function Testimonials() {
         <div>
           <Slider {...settings}>
             {TestimonialsData.map((data) => (
-              <div data-aos = "fade-up" 
-              key={data.id}>
-                <div className="w-full overflow-hidden h-[500px] lg:h-auto p-8 space-y-10 group rounded-3xl hero-bg-color">
+              <div data-aos="fade-up" key={data.id}>
+                <div className="w-full overflow-hidden h-[500px] md:h-auto p-8 space-y-10 group rounded-3xl hero-bg-color flex flex-col justify-between">
                   <p className="text-base">{data.content}</p>
                   <div className="w-full flex items-center justify-between ">
                     <div className="flex items-center gap-3">
@@ -76,7 +73,9 @@ function Testimonials() {
                       />
                       <div className="space-y-1">
                         <p className="text-base font-semibold">{data.name}</p>
-                        <p className="text-xs font-normal italic">{data.company}</p>
+                        <p className="text-xs font-normal italic">
+                          {data.company}
+                        </p>
                       </div>
                     </div>
                   </div>

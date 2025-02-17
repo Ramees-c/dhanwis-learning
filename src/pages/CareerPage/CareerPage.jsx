@@ -38,7 +38,7 @@ function CareerPage() {
         {/* page header */}
         <PageHeader title="Careers" />
 
-        <div>
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 place-items-center">
           {jobOpenings.map((item) => (
             <CareersCard
               key={item.id}

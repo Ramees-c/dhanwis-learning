@@ -52,8 +52,8 @@ function Footer() {
   };
 
   const handleClick = () => {
-    window.scrollTo(0,0)
-  }
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="hero-bg-color rounded-t-3xl">
@@ -64,9 +64,11 @@ function Footer() {
             <Link to="/">
               <img width="120px" src={logo} alt="" />
             </Link>
-            <p className="text-gray-700 dark:text-white/70 lg:pr-24 pt-3">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
-              nihil iusto dolores aliquid sit!
+            <p className="text-gray-700 dark:text-white/70 lg:pr-24 pt-3 ">
+              Dhanwis Techinfo Solutions is an upcoming creative digital
+              company, devoted to enriching digital experiences by providing
+              innovative and ingenious solutions to small and large-scale
+              businesses.
             </p>
           </div>
           {/* Footer links */}
@@ -78,7 +80,7 @@ function Footer() {
               <ul className="space-y-3">
                 {FooterLinks.map((link) => (
                   <li key={link.id}>
-                    <NavLink 
+                    <NavLink
                       to={link.path}
                       className="hover:text-primary duration-300 font-semibold "
                       style={FooterLinkStyles}
@@ -112,7 +114,9 @@ function Footer() {
 
             {/* Company address */}
             <div className="py-8 px-2 col-span-2 sm:col-auto">
-              <h1 className="text-xl font-bold sm:text-left mb-3 text-black/85 dark:text-white">Address</h1>
+              <h1 className="text-xl font-bold sm:text-left mb-3 text-black/85 dark:text-white">
+                Address
+              </h1>
               <div>
                 <div className="flex items-center gap-4">
                   <FaLocationArrow className="text-xl text-primary" />
@@ -130,10 +134,16 @@ function Footer() {
 
                 {/* Social links */}
                 <div className="flex items-center gap-7 mt-6">
-                  <a href="https://www.instagram.com/dhanwis_academy" target="_blank">
+                  <a
+                    href="https://www.instagram.com/dhanwis_academy"
+                    target="_blank"
+                  >
                     <FaInstagram className="text-3xl hover:text-primary duration-300" />
                   </a>
-                  <a href="https://www.facebook.com/dhanwisacademy" target="_blank">
+                  <a
+                    href="https://www.facebook.com/dhanwisacademy"
+                    target="_blank"
+                  >
                     <FaFacebook className="text-3xl hover:text-primary duration-300" />
                   </a>
                   <a href="https://wa.me/+918086487219">
@@ -157,7 +167,3 @@ function Footer() {
 }
 
 export default Footer;
-
-
-
-

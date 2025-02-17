@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Button from "../../components/Shared/Button";
 
@@ -8,6 +8,29 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import CallIcon from "../../components/CallIcon/CallIcon";
 
 function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    console.log(formData)
+  };
+
+  const sendToWhatsApp = () => {
+    const phoneNumber = "+918086842985"; // Replace with your WhatsApp number
+    const { name, message } = formData;
+
+    // Construct WhatsApp message URL
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      `Hello, my name is ${name}. ${message}`
+    )}`;
+
+    // Redirect to WhatsApp
+    window.open(whatsappURL, "_blank");
+  };
+
   return (
     <div>
       <div className="container">
@@ -43,27 +66,33 @@ function ContactPage() {
                 type="text"
                 name="name"
                 placeholder="enter name"
+                value={formData.name}
                 className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
+                onChange={handleChange}
               />
             </div>
 
-            <div className="flex flex-col mb-5">
+            {/* <div className="flex flex-col mb-5">
               <input
                 type="email"
                 name="email"
+                value={formData.email}
                 placeholder="enter email"
                 className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
+                onChange={handleChange}
               />
-            </div>
+            </div> */}
 
-            <div className="flex flex-col mb-8">
+            {/* <div className="flex flex-col mb-8">
               <input
                 type="number"
                 name="number"
+                value={formData.number}
                 placeholder="enter contact number"
                 className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
+                onChange={handleChange}
               />
-            </div>
+            </div> */}
 
             <div className="flex flex-col mb-8">
               <textarea
@@ -71,6 +100,9 @@ function ContactPage() {
                 cols="20"
                 className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
                 placeholder="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
               ></textarea>
             </div>
 
@@ -79,6 +111,7 @@ function ContactPage() {
                 text="Send Message"
                 bgColor="bg-primary"
                 textColor="text-black"
+                onClick={sendToWhatsApp}
               />
             </div>
           </form>
@@ -146,10 +179,16 @@ function ContactPage() {
                     </div>
 
                     <div className="flex items-center gap-7 mt-6">
-                      <a href="https://www.instagram.com/dhanwis_academy" target="_blank">
+                      <a
+                        href="https://www.instagram.com/dhanwis_academy"
+                        target="_blank"
+                      >
                         <FaInstagram className="text-2xl hover:text-primary duration-300" />
                       </a>
-                      <a href="https://www.facebook.com/dhanwisacademy" target="_blank">
+                      <a
+                        href="https://www.facebook.com/dhanwisacademy"
+                        target="_blank"
+                      >
                         <FaFacebook className="text-2xl hover:text-primary duration-300" />
                       </a>
                       <a href="https://wa.me/+918086487219" target="_blank">
