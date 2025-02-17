@@ -99,7 +99,7 @@ function Hero() {
                       <img
                         src={data.img}
                         alt=""
-                        className=" mb-5 lg:mb-0 w-[400px] h-[200px] md:h-[500px] sm-h-[450px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto"
+                        className=" mb-5 xl:mb-0 w-[400px] h-[200px] md:h-[500px] sm-h-[450px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto"
                       />
                     </div>
                   </div>

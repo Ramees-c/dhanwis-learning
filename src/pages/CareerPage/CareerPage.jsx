@@ -46,6 +46,7 @@ function CareerPage() {
               company={item.company}
               location={item.location}
               description={item.description}
+              
             />
           ))}
         </div>

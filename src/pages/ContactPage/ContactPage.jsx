@@ -12,7 +12,7 @@ function ContactPage() {
     <div>
       <div className="container">
         {/* page header */}
-        <PageHeader title="Contact Us" />
+        <PageHeader title="Contact" />
 
         {/* Heading section */}
         <div className="space-y-4 max-w-[2000px] text-center mx-auto mb-5 ">
@@ -146,13 +146,13 @@ function ContactPage() {
                     </div>
 
                     <div className="flex items-center gap-7 mt-6">
-                      <a href="">
+                      <a href="https://www.instagram.com/dhanwis_academy" target="_blank">
                         <FaInstagram className="text-2xl hover:text-primary duration-300" />
                       </a>
-                      <a href="">
+                      <a href="https://www.facebook.com/dhanwisacademy" target="_blank">
                         <FaFacebook className="text-2xl hover:text-primary duration-300" />
                       </a>
-                      <a href="">
+                      <a href="https://wa.me/+918086487219" target="_blank">
                         <FaWhatsapp className="text-2xl hover:text-primary duration-300" />
                       </a>
                     </div>

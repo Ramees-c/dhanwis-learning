@@ -130,13 +130,13 @@ function Footer() {
 
                 {/* Social links */}
                 <div className="flex items-center gap-7 mt-6">
-                  <a href="">
+                  <a href="https://www.instagram.com/dhanwis_academy" target="_blank">
                     <FaInstagram className="text-3xl hover:text-primary duration-300" />
                   </a>
-                  <a href="">
+                  <a href="https://www.facebook.com/dhanwisacademy" target="_blank">
                     <FaFacebook className="text-3xl hover:text-primary duration-300" />
                   </a>
-                  <a href="">
+                  <a href="https://wa.me/+918086487219">
                     <FaWhatsapp className="text-3xl hover:text-primary duration-300" />
                   </a>
                 </div>
