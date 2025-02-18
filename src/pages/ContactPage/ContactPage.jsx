@@ -15,20 +15,25 @@ function ContactPage() {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    console.log(formData)
   };
 
-  const sendToWhatsApp = () => {
-    const phoneNumber = "+918086842985"; // Replace with your WhatsApp number
+  const sendToWhatsApp = (e) => {
+    e.preventDefault()
+    const phoneNumber = "+918086842985"; 
     const { name, message } = formData;
 
-    // Construct WhatsApp message URL
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      `Hello, my name is ${name}. ${message}`
-    )}`;
+    const whatsappMessage = `Hello, my name is ${name}. Message: ${message}`;
+    const encodedMessage = encodeURIComponent(whatsappMessage);
 
+    // Construct WhatsApp message URL
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
     // Redirect to WhatsApp
     window.open(whatsappURL, "_blank");
+
+
+    console.log(formData.name)
+    console.log(formData.message)
   };
 
   return (
@@ -60,6 +65,7 @@ function ContactPage() {
             className="basis-[50%] ml-0 xl:ml-10 w-full"
             data-aos="fade-left"
             data-aos-duration="500"
+            onSubmit={sendToWhatsApp}
           >
             <div className="flex flex-col mb-5">
               <input
@@ -96,7 +102,7 @@ function ContactPage() {
 
             <div className="flex flex-col mb-8">
               <textarea
-                rows="3"
+                rows="7"
                 cols="20"
                 className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
                 placeholder="message"
@@ -111,7 +117,7 @@ function ContactPage() {
                 text="Send Message"
                 bgColor="bg-primary"
                 textColor="text-black"
-                onClick={sendToWhatsApp}
+                type="submit"
               />
             </div>
           </form>
