@@ -4,6 +4,8 @@ import CareersCard from "../../components/CareersCard/CareersCard";
 import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
 import CallIcon from "../../components/CallIcon/CallIcon";
 
+
+
 function CareerPage() {
   const jobOpenings = [
     {
@@ -46,7 +48,6 @@ function CareerPage() {
               company={item.company}
               location={item.location}
               description={item.description}
-              
             />
           ))}
         </div>

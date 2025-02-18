@@ -1,6 +1,15 @@
 import React from "react";
 
+import { ToastContainer, toast } from "react-toastify";
+
 function CareersCard({ title, company, location, description }) {
+
+  const notify = () => {
+    toast.info('CV upload', {
+      className: "hero-bg-color",
+    })
+  }
+
   return (
     <div className="pb-20">
       <div className="rounded-xl p-6 shadow-[0_0_22px_rgba(0,0,0,0.15)] hover:dark:shadow-gray-800 transition-shadow duration-300" data-aos = "fade-up">
@@ -18,11 +27,13 @@ function CareersCard({ title, company, location, description }) {
             // href={applyLink}
 
             className="inline-block text-primary text-md font-bold cursor-pointer"
+            onClick={notify}
           >
             Apply Now
           </a>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
