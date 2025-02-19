@@ -1,10 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
 
-import slider_img_1 from "../../assets/images/hero/bannner_image4.png"
-import slider_img_2 from "../../assets/images/hero/bannner_image4.png"
-import slider_img_3 from "../../assets/images/hero/bannner_image4.png"
+import slider_img_1 from "../../assets/images/hero/bannner_image4.png";
+import slider_img_2 from "../../assets/images/hero/bannner_image4.png";
+import slider_img_3 from "../../assets/images/hero/bannner_image4.png";
 import Button from "../Shared/Button";
+import { Link } from "react-router-dom";
 
 const HeroData = [
   {
@@ -21,8 +22,7 @@ const HeroData = [
     img: slider_img_2,
     subtitle: "Unlock Your Future",
     title: "Learn from industry leaders.",
-    description:
-      "Reach your career goals with a supportive growth community.",
+    description: "Reach your career goals with a supportive growth community.",
   },
 
   {
@@ -30,15 +30,14 @@ const HeroData = [
     img: slider_img_3,
     subtitle: "From Beginner to Pro",
     title: "Start Your IT Career with Confidence.",
-    description:
-      "Build a strong foundation for a rewarding career in IT.",
+    description: "Build a strong foundation for a rewarding career in IT.",
   },
 ];
 
 function Hero() {
   const settings = {
     dots: false,
-    arrows : false,
+    arrows: false,
     infinite: true,
     speed: 800,
     slidesToScroll: 1,
@@ -60,42 +59,49 @@ function Hero() {
                 <div key={data.id} className="grid grid-cols-1 xl:grid-cols-2">
                   {/* text content section */}
                   <div className="flex flex-col justify-center gap-4 sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left order-2 xl:order-1 relative z-10">
-                    <h1 data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-once="true"
-                    className="text-1xl sm:text-5xl lg-text-1xl font-bold text-primary">
+                    <h1
+                      data-aos="fade-up"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                      className="text-1xl sm:text-5xl lg-text-1xl font-bold text-primary"
+                    >
                       {data.subtitle}
                     </h1>
-                    <h1 data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-once="true" 
-                    className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3">
+                    <h1
+                      data-aos="fade-up"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                      className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3"
+                    >
                       {data.title}
                     </h1>
-                    <h1 data-aos="fade-up"
-                    data-aos-duration="500"
-                    data-aos-once="true" 
-                    className="text-1xl dark:text-white mb-5">
+                    <h1
+                      data-aos="fade-up"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                      className="text-1xl dark:text-white mb-5"
+                    >
                       {data.description}
                     </h1>
-                    <div data-aos="fade-up"
-                    data-aos-offset="0"
-                    data-aos-duration="500"
-                    data-aos-delay="300">
-                      <Button
-                        text="Ready to begin?"
-                        bgColor="bg-primary"
-                        textColor="text-black"
-                      />
+                    <div
+                      data-aos="fade-up"
+                      data-aos-offset="0"
+                      data-aos-duration="500"
+                      data-aos-delay="300"
+                    >
+                      <Link to="/about">
+                        <Button
+                          text="Ready to begin?"
+                          bgColor="bg-primary"
+                          textColor="text-black"
+                        />
+                      </Link>
                     </div>
                   </div>
 
                   {/* image section */}
                   <div className="order-1 xl:order-2">
-                    <div
-                    data-aos="zoom-in"
-                    data-aos-once="true" 
-                    >
+                    <div data-aos="zoom-in" data-aos-once="true">
                       <img
                         src={data.img}
                         alt=""

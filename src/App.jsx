@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import './App.css'
+import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
@@ -34,11 +34,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/courses" element={<CoursesPage />} />
-        <Route path="/gallery" element={<GalleryPage/>} />
+        <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/careers" element={<CareerPage />} />
       </Routes>
-
       <Footer />
     </div>
   );

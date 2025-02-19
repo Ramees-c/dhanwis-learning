@@ -23,7 +23,22 @@ import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
 import CallIcon from "../../components/CallIcon/CallIcon";
 
 function GalleryPage() {
-  const Images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14];
+  const Images = [
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+  ];
 
   return (
     <div>

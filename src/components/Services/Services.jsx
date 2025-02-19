@@ -5,7 +5,6 @@ import { LiaUserFriendsSolid } from "react-icons/lia";
 import { FaHandsHelping } from "react-icons/fa";
 import { BsPersonWorkspace } from "react-icons/bs";
 
-
 const ServiceData = [
   {
     id: 1,
@@ -68,7 +67,6 @@ function Services() {
               <p className="text-sm text-gray-500 dark:text-white/70 text-justify [word-spacing:0.1rem]">
                 {data.desc}
               </p>
-              
             </div>
           ))}
         </div>

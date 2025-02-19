@@ -56,12 +56,6 @@ function Navbar() {
         <div className="container flex justify-between">
           {/* Logo and Links section */}
           <div className="flex items-center gap-10">
-            {/* <a
-              href=""
-              className="text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl"
-            >
-              Dhanwis
-            </a> */}
             <NavLink to="/">
               <img src={logo} alt="" width={"120px"} />
             </NavLink>
@@ -79,7 +73,7 @@ function Navbar() {
                       to={menu.link}
                       className="inline-block px-4 py-2 lg:py-0 font-bold text-grey-500 hover:text-primary dark:hover-text-white"
                       style={navLinkStyles}
-                      onClick={()=>setIsOpen(false)}
+                      onClick={() => setIsOpen(false)}
                     >
                       {menu.name}
                     </NavLink>

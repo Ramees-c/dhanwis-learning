@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Button from "../../components/Shared/Button";
 
-import contact_img from "../../assets/images/contact/contact_img_1.jpg";
+import contact_img from "../../assets/images/contact/contact_img.jpg";
 import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import CallIcon from "../../components/CallIcon/CallIcon";
@@ -18,8 +18,8 @@ function ContactPage() {
   };
 
   const sendToWhatsApp = (e) => {
-    e.preventDefault()
-    const phoneNumber = "+918086487219"; 
+    e.preventDefault();
+    const phoneNumber = "+918086487219";
     const { name, message } = formData;
 
     const whatsappMessage = `Hello, my name is ${name}. Message: ${message}`;
@@ -27,12 +27,9 @@ function ContactPage() {
 
     // Construct WhatsApp message URL
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-    
+
     // Redirect to WhatsApp
     window.open(whatsappURL, "_blank");
-
-
-    
   };
 
   return (
@@ -198,21 +195,3 @@ function ContactPage() {
 }
 
 export default ContactPage;
-
-{
-  /* <div
-              className="w-full h-96 rounded-lg shadow-lg overflow-hidden"
-              data-aos="fade-up"
-              data-aos-duration="500"
-            >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.398985695801!2d75.36439267486898!3d11.877281537925048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba43dda7e747ddf%3A0xc606347cd29e5d35!2sDHANWIS%20Learning%20Hub%20%7C%20React%20Js%20%7C%20Flutter%20%7C%20Python%20%7C%20Mernstack%20%7C%20Projects%20%7C%20internship%20Training%20in%20Kannur%20%7C%20Kerala!5e0!3m2!1sen!2sin!4v1738922991940!5m2!1sen!2sin"
-                width="100%"
-                height="400"
-                style={{ border: 0 }}
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div> */
-}

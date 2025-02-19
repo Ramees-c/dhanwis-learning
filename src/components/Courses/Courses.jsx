@@ -17,7 +17,7 @@ function Courses() {
         </div>
         {/* Body section */}
         <div>
-            <CourseCard />
+          <CourseCard />
         </div>
       </div>
     </div>

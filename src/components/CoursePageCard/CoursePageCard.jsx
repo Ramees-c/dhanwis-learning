@@ -62,7 +62,7 @@ function CoursePageCard() {
 
   return (
     <div className="py-20">
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-5 place-items-center cursor-pointer">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 place-items-center cursor-pointer">
        
 
        {

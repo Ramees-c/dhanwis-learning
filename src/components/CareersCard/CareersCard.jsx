@@ -4,12 +4,8 @@ import Swal from "sweetalert2";
 
 function CareersCard({ title, company, location, description }) {
   const notify = () => {
-    // toast.info('Upload your CV to info@dhanwis.com', {
-    //   className: "hero-bg-color",
-    // }, { transition },)
-
     Swal.fire({
-      text: "Upload your CV to info@dhanwis.com",
+      text: "Send your CV to info@dhanwis.com",
       customClass: {
         popup: "hero-bg-color rounded-lg shadow-lg",
         confirmButton: "bg-primary font-bold py-2 px-4 text-black rounded",
