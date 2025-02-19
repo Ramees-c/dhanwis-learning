@@ -63,7 +63,7 @@ function Testimonials() {
             {TestimonialsData.map((data) => (
               <div data-aos="fade-up" key={data.id}>
                 <div className="w-full overflow-hidden h-[500px] md:h-auto p-8 space-y-10 group rounded-3xl hero-bg-color flex flex-col justify-between">
-                  <p className="text-base">{data.content}</p>
+                  <p className="text-base text-justify">{data.content}</p>
                   <div className="w-full flex items-center justify-between ">
                     <div className="flex items-center gap-3">
                       <img

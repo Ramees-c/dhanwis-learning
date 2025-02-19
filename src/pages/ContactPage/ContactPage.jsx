@@ -19,7 +19,7 @@ function ContactPage() {
 
   const sendToWhatsApp = (e) => {
     e.preventDefault()
-    const phoneNumber = "+918086842985"; 
+    const phoneNumber = "+918086487219"; 
     const { name, message } = formData;
 
     const whatsappMessage = `Hello, my name is ${name}. Message: ${message}`;
@@ -32,8 +32,7 @@ function ContactPage() {
     window.open(whatsappURL, "_blank");
 
 
-    console.log(formData.name)
-    console.log(formData.message)
+    
   };
 
   return (
@@ -75,30 +74,9 @@ function ContactPage() {
                 value={formData.name}
                 className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
                 onChange={handleChange}
+                required
               />
             </div>
-
-            {/* <div className="flex flex-col mb-5">
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                placeholder="enter email"
-                className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
-                onChange={handleChange}
-              />
-            </div> */}
-
-            {/* <div className="flex flex-col mb-8">
-              <input
-                type="number"
-                name="number"
-                value={formData.number}
-                placeholder="enter contact number"
-                className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
-                onChange={handleChange}
-              />
-            </div> */}
 
             <div className="flex flex-col mb-8">
               <textarea
@@ -109,6 +87,7 @@ function ContactPage() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
+                required
               ></textarea>
             </div>
 

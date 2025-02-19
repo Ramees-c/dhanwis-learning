@@ -62,7 +62,7 @@ function Footer() {
           {/* Company details */}
           <div className=" py-8 px-4">
             <Link to="/">
-              <img width="120px" src={logo} alt="" />
+              <img width="120px" src={logo} alt="logo" onClick={handleClick} />
             </Link>
             <p className="text-gray-700 dark:text-white/70 lg:pr-24 pt-3 ">
               Dhanwis Techinfo Solutions is an upcoming creative digital
@@ -72,7 +72,7 @@ function Footer() {
             </p>
           </div>
           {/* Footer links */}
-          <div className="col-span-2 grid grid-cols-1 sm:grid-cols-2 md:pl-10">
+          <div className="col-span-2 grid grid-cols-1 sm:grid-cols-2 xl:pl-10">
             <div className="py-8 px-4">
               <h1 className="text-xl font-bold sm:text-left mb-3 text-black/85 dark:text-white">
                 Quick Links
@@ -92,25 +92,6 @@ function Footer() {
                 ))}
               </ul>
             </div>
-
-            {/* Second col links */}
-            {/* <div className="py-8 px-4">
-              <h1 className="text-xl font-bold sm:text-left mb-3">
-                Quick Links
-              </h1>
-              <ul className="space-y-3">
-                {FooterLinks.map((link) => (
-                  <li key={link.id}>
-                    <a
-                      className="text-gray-600 hue-rotate-30 hover:dark:text-white dark:text-gray-400 hover:text-black duration-300 "
-                      href=""
-                    >
-                      {link.title}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div> */}
 
             {/* Company address */}
             <div className="py-8 px-2 col-span-2 sm:col-auto">

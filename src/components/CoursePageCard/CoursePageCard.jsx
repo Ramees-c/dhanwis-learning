@@ -12,41 +12,49 @@ function CoursePageCard() {
     {
       course: "Flutter",
       image: flutter_img,
-      title1: "One-on-One Instruction",
-      title2: "Lesson Packages",
-      title3: "Flexible Scheduling",
-      title4: "Dang this much!",
-      title5: "Something else cool",
+      duration: "4 Months",
+      title1: "Learn Flutter, Dart, Firebase, APIs",
+      title2: "One-on-one training with expert mentors",
+      title3: "Real-world project experience during training",
+      title4: "Internship & certification provided",
+      title5: "Placement assistance until you secure a job",
+      title6: "Build cross-platform mobile apps for iOS & Android",
       aosDelay: "0",
     },
     {
       course: "MERN",
       image: mern_img,
-      title1: "One-on-One Instruction",
-      title2: "Lesson Packages",
-      title3: "Flexible Scheduling",
-      title4: "Dang this much!",
-      title5: "Something else cool",
+      duration: "5 Months",
+      title1: "Covers MongoDB, Express.js, React.js, Node.js",
+      title2: "One-on-one training with flexible timing",
+      title3: "Live project exposure with real clients",
+      title4: "Internship & course certification",
+      title5: "Placement assistance until you get hired",
+      title6: "Industry-based curriculum* for full-stack development",
       aosDelay: "200",
     },
     {
       course: "PYTHON",
       image: python_img,
-      title1: "One-on-One Instruction",
-      title2: "Lesson Packages",
-      title3: "Flexible Scheduling",
-      title4: "Dang this much!",
-      title5: "Something else cool",
+      duration: "4 Months",
+      title1: "Covers React, REST API, Python, Django, Database",
+      title2: "One-on-one training with flexible timing",
+      title3: "Hands-on live projects with our production team",
+      title4: "Internship & course certificate provided",
+      title5: "Placement assistance until you get a job",
+      title6: "Industry-oriented training for real-world skills",
       aosDelay: "400",
     },
     {
       course: "Digital Marketting",
       image: digital_img,
-      title1: "One-on-One Instruction",
-      title2: "Lesson Packages",
-      title3: "Flexible Scheduling",
-      title4: "Dang this much!",
-      title5: "Something else cool",
+      duration: "3 Months",
+      title1: "Learn SMM, SEO, WordPress, Photoshop",
+      title2: "One-on-one training with flexible hours",
+      title3: "Live project experience with our team",
+      title4: "Internship & certification provided",
+      title5: "Job placement support available",
+      title6: "Practical, industry-relevant skills",
       aosDelay: "600",
     },
     
@@ -70,7 +78,8 @@ function CoursePageCard() {
             />
           </header>
           <div className="flex flex-col p-6 border-t">
-          <h1 className="text-2xl font-bold mb-3 text-black/85 dark:text-white/85">{data.course}</h1>
+          <h1 className="text-2xl font-bold mb-2 text-black/85 dark:text-white/85">{data.course}</h1>
+          <h2 className="mb-5 text-black/85 dark:text-white/85">{data.duration}</h2>
             <div className="flex-1 inline-flex items-center mb-3">
               <div className="bg-yellow-300 mr-3 p-1 rounded-full">
                 <svg
@@ -83,7 +92,7 @@ function CoursePageCard() {
                   <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
                 </svg>
               </div>
-              <p className="text-xs">{data.title1}</p>
+              <p className="text-sm">{data.title1}</p>
             </div>
             <div className="flex-1 inline-flex items-center mb-3">
               <div className="bg-yellow-300 mr-3 p-1 rounded-full">
@@ -97,7 +106,7 @@ function CoursePageCard() {
                   <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
                 </svg>
               </div>
-              <p className="text-xs">{data.title2}</p>
+              <p className="text-sm text-justify">{data.title2}</p>
             </div>
             <div className="flex-1 inline-flex items-center mb-3">
               <div className="bg-yellow-300 mr-3 p-1 rounded-full">
@@ -111,7 +120,7 @@ function CoursePageCard() {
                   <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
                 </svg>
               </div>
-              <p className="text-xs">{data.title3}</p>
+              <p className="text-sm">{data.title3}</p>
             </div>
             <div className="flex-1 inline-flex items-center mb-3">
               <div className="bg-yellow-300 mr-3 p-1 rounded-full">
@@ -125,7 +134,21 @@ function CoursePageCard() {
                   <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
                 </svg>
               </div>
-              <p className="text-xs">{data.title4}</p>
+              <p className="text-sm">{data.title4}</p>
+            </div>
+            <div className="flex-1 inline-flex items-center mb-3">
+              <div className="bg-yellow-300 mr-3 p-1 rounded-full">
+                <svg
+                  className="h-3 w-3 text-green-800 fill-current"
+                  viewBox="0 0 20 20"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
+                </svg>
+              </div>
+              <p className="text-sm">{data.title5}</p>
             </div>
             <div className="flex-1 inline-flex items-center">
               <div className="bg-yellow-300 mr-3 p-1 rounded-full">
@@ -139,7 +162,7 @@ function CoursePageCard() {
                   <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
                 </svg>
               </div>
-              <p className="text-xs">{data.title5}</p>
+              <p className="text-sm">{data.title6}</p>
             </div>
           </div>
         </div>
