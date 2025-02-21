@@ -62,14 +62,14 @@ function CoursePageCard() {
 
   return (
     <div className="py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 place-items-center cursor-pointer">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 place-items-center cursor-pointe">
        
 
        {
         CardData.map((data,index) => (
           <div  data-aos="fade-up"
           data-aos-delay="{data.aosDelay}"
-          key={index} className="h-full shadow-xl rounded-3xl hero-bg-color overflow-hidden hover:shadow-2xl hover:dark:shadow-gray-800 transition-shadow duration-300">
+          key={index} className="h-full shadow-xl rounded-3xl hero-bg-color overflow-hidden hover:shadow-2xl hover:dark:shadow-gray-800 transition-shadow duration-300 border-2 dark:border-none">
           <header>
           <img
               src={data.image}
@@ -78,7 +78,7 @@ function CoursePageCard() {
             />
           </header>
           <div className="flex flex-col p-6 border-t">
-          <h1 className="text-2xl font-bold mb-2 text-black/85 dark:text-white/85">{data.course}</h1>
+          <h1 className="text-2xl font-bold mb-2 text-black/85 dark:text-white/95">{data.course}</h1>
           <h2 className="mb-5 text-black/85 dark:text-white/85">{data.duration}</h2>
             <div className="flex-1 inline-flex items-center mb-3">
               <div className="bg-yellow-300 mr-3 p-1 rounded-full">
@@ -92,7 +92,7 @@ function CoursePageCard() {
                   <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
                 </svg>
               </div>
-              <p className="text-sm">{data.title1}</p>
+              <p className="text-sm text-black/85 dark:text-white/95">{data.title1}</p>
             </div>
             <div className="flex-1 inline-flex items-center mb-3">
               <div className="bg-yellow-300 mr-3 p-1 rounded-full">
@@ -106,7 +106,7 @@ function CoursePageCard() {
                   <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
                 </svg>
               </div>
-              <p className="text-sm text-justify">{data.title2}</p>
+              <p className="text-sm text-black/85 dark:text-white/95">{data.title2}</p>
             </div>
             <div className="flex-1 inline-flex items-center mb-3">
               <div className="bg-yellow-300 mr-3 p-1 rounded-full">
@@ -120,7 +120,7 @@ function CoursePageCard() {
                   <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
                 </svg>
               </div>
-              <p className="text-sm">{data.title3}</p>
+              <p className="text-sm text-black/85 dark:text-white/95">{data.title3}</p>
             </div>
             <div className="flex-1 inline-flex items-center mb-3">
               <div className="bg-yellow-300 mr-3 p-1 rounded-full">
@@ -134,7 +134,7 @@ function CoursePageCard() {
                   <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
                 </svg>
               </div>
-              <p className="text-sm">{data.title4}</p>
+              <p className="text-sm text-black/85 dark:text-white/95">{data.title4}</p>
             </div>
             <div className="flex-1 inline-flex items-center mb-3">
               <div className="bg-yellow-300 mr-3 p-1 rounded-full">
@@ -148,7 +148,7 @@ function CoursePageCard() {
                   <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
                 </svg>
               </div>
-              <p className="text-sm">{data.title5}</p>
+              <p className="text-sm text-black/85 dark:text-white/95">{data.title5}</p>
             </div>
             <div className="flex-1 inline-flex items-center">
               <div className="bg-yellow-300 mr-3 p-1 rounded-full">
@@ -162,7 +162,7 @@ function CoursePageCard() {
                   <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
                 </svg>
               </div>
-              <p className="text-sm">{data.title6}</p>
+              <p className="text-sm text-black/85 dark:text-white/95">{data.title6}</p>
             </div>
           </div>
         </div>

@@ -14,13 +14,13 @@ function About() {
   return (
     <div>
       <div className="container">
-        <div className="rounded-3xl hero-bg-color p-5">
+        <div className="p-5">
           {/* Header section */}
           <div className=" p-6 text-center max-w-[2000px] mx-auto mb-5">
             <h1 className="uppercase font-bold text-2xl xl:text-4xl text-primary font-titleFont">
               Achieve your Goals with Dhanwis
             </h1>
-            <p className="font-semibold mt-3 text-sm lg:text-xl text-black/85 dark:text-white">
+            <p className="font-semibold mt-3 text-sm lg:text-xl text-black/85 dark:text-white/95">
               Whether you're looking to enhance your technical skills or drive
               your business forward with cutting-edge IT solutions, we are here
               to help you achieve your goals.

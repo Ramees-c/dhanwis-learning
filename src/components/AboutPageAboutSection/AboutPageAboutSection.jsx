@@ -12,13 +12,13 @@ function AboutPageAboutSection() {
   return (
     <div>
       <div className="container">
-        <div className="rounded-3xl hero-bg-color p-5">
+        <div className="p-5">
           {/* Header section */}
           <div className=" p-6 text-center max-w-[2000px] mx-auto mb-5">
             <h1 className="uppercase font-bold text-2xl xl:text-4xl text-primary font-titleFont">
               Achieve your Goals with Dhanwis
             </h1>
-            <p className="font-semibold mt-3 text-sm lg:text-xl text-black/85 dark:text-white">
+            <p className="font-semibold mt-3 w-f text-sm lg:text-xl text-black/85 dark:text-white/95">
               Join our academy to master app development, web development, and
               digital marketing. We provide expert-led training, hands-on
               experience, and career guidance to help you succeed in the digital
@@ -48,7 +48,7 @@ function AboutPageAboutSection() {
               <h1 className="uppercase font-semibold text-2xl text-primary mb-1">
                 Learn Flutter from Industry Experts & Build Real Apps
               </h1>
-              <p className="mb-5 text-black/85 dark:text-white text-justify [word-spacing:0.1rem]">
+              <p className="mb-5 text-black/85 dark:text-white/95 text-justify [word-spacing:0.1rem]">
                 Learn Flutter from industry experts and build real-world
                 applications with hands-on experience. Master cross-platform
                 development using Flutter and Dart to create high-performance
@@ -74,7 +74,7 @@ function AboutPageAboutSection() {
             </div>
           </div>
 
-          <div className="mt-16 max-w-[1320px] lg:py-[80] py-5 flex xl:flex-row flex-col justify-center items-center mx-auto">
+          <div className="mt-16 max-w-[1320px] lg:py-[80] py-5 flex xl:flex-row flex-col-reverse justify-center items-center mx-auto">
             {/* Content section */}
 
             <div
@@ -85,7 +85,7 @@ function AboutPageAboutSection() {
               <h1 className="uppercase font-semibold text-2xl text-primary mb-1">
                 Learn MERN Stack & Build Real-World Projects
               </h1>
-              <p className="mb-5 text-black/85 dark:text-white text-justify [word-spacing:0.1rem]">
+              <p className="mb-5 text-black/85 dark:text-white/95 text-justify [word-spacing:0.1rem]">
                 Learn MERN Stack from industry experts and build real-world
                 projects with hands-on experience. Master MongoDB, Express.js,
                 React, and Node.js to develop dynamic, full-stack web
@@ -117,7 +117,7 @@ function AboutPageAboutSection() {
             >
               <img
                 src={about_img2}
-                className="w-full rounded-xl mt-10 xl:mt-0"
+                className="w-full rounded-xl mb-10 xl:mb-0"
                 alt=""
               />
             </div>
@@ -145,7 +145,7 @@ function AboutPageAboutSection() {
               <h1 className="uppercase font-semibold text-2xl text-primary mb-1">
                 Learn Python Full Stack & Build Real-World Projects
               </h1>
-              <p className="mb-5 text-black/85 dark:text-white text-justify [word-spacing:0.1rem]">
+              <p className="mb-5 text-black/85 dark:text-white/95 text-justify [word-spacing:0.1rem]">
                 Learn Python Full Stack development from industry experts and
                 build real-world projects with hands-on experience. Master
                 front-end and back-end technologies using Python, Django, React,
@@ -171,7 +171,7 @@ function AboutPageAboutSection() {
             </div>
           </div>
 
-          <div className="mt-16 max-w-[1320px] lg:py-[80] py-5 flex xl:flex-row flex-col justify-center items-center mx-auto">
+          <div className="mt-16 max-w-[1320px] lg:py-[80] py-5 flex xl:flex-row flex-col-reverse justify-center items-center mx-auto">
             {/* Content section */}
 
             <div
@@ -182,7 +182,7 @@ function AboutPageAboutSection() {
               <h1 className="uppercase font-semibold text-2xl text-primary mb-1">
                 Learn Digital Marketing & Build Your Career
               </h1>
-              <p className="mb-5 text-black/85 dark:text-white text-justify [word-spacing:0.1rem]">
+              <p className="mb-5 text-black/85 dark:text-white/95 text-justify [word-spacing:0.1rem]">
                 Learn digital marketing from industry experts and build a
                 successful career with hands-on training. Master SEO, social
                 media marketing, PPC, content marketing, and more. Gain
@@ -214,7 +214,7 @@ function AboutPageAboutSection() {
             >
               <img
                 src={about_img4}
-                className="w-full rounded-xl mt-10 xl:mt-0"
+                className="w-full rounded-xl mb-10 xl:mb-0"
                 alt=""
               />
             </div>

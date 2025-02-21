@@ -59,7 +59,7 @@ function FaqComponent() {
                 className="flex justify-between gap-8 cursor-pointer items-start text-2xl py-4"
                 onClick={() => showAnswer(index)}
               >
-                <h1 className="text-xl text-black/85 dark:text-white">{data.question}</h1>
+                <h1 className="text-xl text-black/85 dark:text-white/95">{data.question}</h1>
                 <span
                   className={`text-2xl text-primary font-bold ${
                     showSelectedQ === index ? "rotate-180" : ""

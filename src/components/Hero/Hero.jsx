@@ -51,14 +51,14 @@ function Hero() {
   return (
     <div className="container">
       {/* Hero section */}
-      <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px] hero-bg-color flex items-center justify-center">
+      <div className="overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[950px] xl:min-h-[650px] hero-bg-color flex items-center justify-center">
         <div className="container pb-8 sm:pb-0 overflow-hidden">
           <Slider {...settings}>
             {HeroData.map((data) => (
               <div key={data.id}>
                 <div key={data.id} className="grid grid-cols-1 xl:grid-cols-2">
                   {/* text content section */}
-                  <div className="flex flex-col justify-center gap-4 sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left order-2 xl:order-1 relative z-10">
+                  <div className="flex flex-col justify-center gap-4 sm:pl-3 pt-12 sm:pt-0 text-center xl:text-left order-2 xl:order-1 relative z-10">
                     <h1
                       data-aos="fade-up"
                       data-aos-duration="500"
@@ -105,7 +105,7 @@ function Hero() {
                       <img
                         src={data.img}
                         alt=""
-                        className=" mb-5 xl:mb-0 w-[400px] h-[200px] md:h-[500px] sm-h-[450px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto"
+                        className=" mb-5 xl:mb-0 w-[400px] h-[300px] md:h-[500px] sm-h-[450px] sm:w-[450px] sm:scale-105 lg:scale-110 object-contain mx-auto"
                       />
                     </div>
                   </div>

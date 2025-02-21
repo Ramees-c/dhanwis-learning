@@ -6,15 +6,16 @@ function CareersCard({ title, company, location, description }) {
   const notify = () => {
     Swal.fire({
       text: "Send your CV to info@dhanwis.com",
+      willOpen: "onBeforeOpen",
       customClass: {
         popup: "hero-bg-color rounded-lg shadow-lg",
         confirmButton: "bg-primary font-bold py-2 px-4 text-black rounded",
-      },
+        },
     });
   };
 
   return (
-    <div className="pb-20">
+    <div className="pb-20 ">
       <div
         className="rounded-xl p-6 shadow-[0_0_22px_rgba(0,0,0,0.15)] hover:dark:shadow-gray-800 transition-shadow duration-300"
         data-aos="fade-up"
@@ -30,7 +31,7 @@ function CareersCard({ title, company, location, description }) {
         </p>
         <div className="mt-4">
           <p
-            className="inline-block text-primary text-md font-bold cursor-pointer"
+            className="inline-block text-primary text-md font-bold cursor-pointer hover:text-black dark:hover:text-white duration-300"
             onClick={notify}
           >
             Apply Now

@@ -8,9 +8,9 @@ function WhatsappIcon() {
       <a
         href="https://wa.me/+918086487219"
         target="_blank"
-        className="fixed bottom-20 right-3"
+        className="fixed bottom-20 right-4"
       >
-        <img src={whatsapp_icon} alt="whatsapp" width="90" />
+        <img src={whatsapp_icon} alt="whatsapp" className="w-[50px]" />
       </a>
     </div>
   );

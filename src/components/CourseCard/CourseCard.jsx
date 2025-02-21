@@ -51,19 +51,19 @@ function CourseCard() {
           key={data.id}
           className="p-4"
         >
-          <div className="h-full shadow-xl rounded-3xl hero-bg-color overflow-hidden cursor-pointer hover:shadow-2xl hover:dark:shadow-gray-800 transition-shadow duration-300">
+          <div className="h-full shadow-xl rounded-3xl hero-bg-color overflow-hidden cursor-pointer hover:shadow-2xl hover:dark:shadow-gray-800 transition-shadow duration-300 border-2 dark:border-none">
             <img
               src={data.image}
               className="lg:h-68 md:h-38 w-full object-cover object-center"
               alt=""
             />
-            <div className="p-6 text-black/85 dark:text-white/85 transition duration-300 ease-in h-full">
-              <h1 className="text-2xl font-bold mb-3">{data.course}</h1>
-              <p className="leading-relaxed mb-3">{data.desc}</p>
+            <div className="p-6 transition duration-300 ease-in h-full">
+              <h1 className="text-2xl font-bold mb-3 text-black/85 dark:text-white/95">{data.course}</h1>
+              <p className="leading-relaxed mb-3 text-black/85 dark:text-white/95">{data.desc}</p>
               <div className="flex items-end flex-wrap justify-center">
                 <Link
                   to="/courses"
-                  className="text-primary md:mb-2 lg:mb-0 font-bold"
+                  className="text-primary md:mb-2 lg:mb-0 font-bold hover:text-black dark:hover:text-white duration-300"
                   onClick={handleClick}
                 >
                   Learn More
