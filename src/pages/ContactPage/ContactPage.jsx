@@ -22,7 +22,7 @@ function ContactPage() {
     const phoneNumber = "+918086487219";
     const { name, message } = formData;
 
-    const whatsappMessage = `Hello, my name is ${name}. Message: ${message}`;
+    const whatsappMessage = `Hello, my name is ${name}.\n${message}`;
     const encodedMessage = encodeURIComponent(whatsappMessage);
 
     // Construct WhatsApp message URL

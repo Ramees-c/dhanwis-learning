@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 function CareersCard({ title, company, location, description }) {
   const notify = () => {
     Swal.fire({
-      text: "Send your CV to info@dhanwis.com",
+      html: "<p>Send your CV to <a style='color: blue; font-weight: bold' href='mailto:info@dhanwis.com'>info@dhanwis.com</a></p>",
       willOpen: "onBeforeOpen",
       customClass: {
         popup: "hero-bg-color rounded-lg shadow-lg",
@@ -15,7 +15,7 @@ function CareersCard({ title, company, location, description }) {
   };
 
   return (
-    <div className="pb-20 ">
+    <div className="pb-20">
       <div
         className="rounded-xl p-6 shadow-[0_0_22px_rgba(0,0,0,0.15)] hover:dark:shadow-gray-800 transition-shadow duration-300"
         data-aos="fade-up"
