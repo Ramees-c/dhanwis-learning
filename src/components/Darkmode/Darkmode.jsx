@@ -10,18 +10,18 @@ function Darkmode() {
 
   const element = document.documentElement; //access to html
 
-//   Set theme to local storage and html element
+  //   Set theme to local storage and html element
   useEffect(() => {
-    localStorage.setItem("theme", theme)
-    if(theme === "dark") {
-        element.classList.add("dark")
-        element.classList.add("dark")
-    }else{
-        element.classList.remove("light")
-        element.classList.remove("dark")
+    localStorage.setItem("theme", theme);
+    if (theme === "dark") {
+      element.classList.add("dark");
+      element.classList.add("dark");
+    } else {
+      element.classList.remove("light");
+      element.classList.remove("dark");
     }
-  })
-  
+  });
+
   return (
     <div className="relative">
       <img

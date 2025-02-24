@@ -4,29 +4,24 @@ function FaqComponent() {
   const FaqData = [
     {
       id: 1,
-      question:
-        " Are the courses beginner-friendly?",
+      question: " Are the courses beginner-friendly?",
       answer:
         "Yes, our courses are designed for beginners and professionals, covering fundamentals to advanced concepts with real-world projects.",
     },
     {
       id: 2,
-      question:
-        "Do you offer certifications?",
+      question: "Do you offer certifications?",
       answer:
         "Yes, upon successful course completion, you will receive an industry-recognized certification.",
     },
     {
       id: 3,
-      question:
-        "Do you provide online courses?",
-      answer:
-        "No, we only offer offline courses at our academy.",
+      question: "Do you provide online courses?",
+      answer: "No, we only offer offline courses at our academy.",
     },
     {
       id: 4,
-      question:
-        "Do you offer placement assistance?",
+      question: "Do you offer placement assistance?",
       answer:
         "Yes, we provide job placement support, including resume building and interview preparation.",
     },
@@ -52,14 +47,18 @@ function FaqComponent() {
         {/* Content section */}
         <div>
           {FaqData.map((data, index) => (
-            <div 
-            data-aos="fade-up"
-            key={index} className="border-b border-black/15 dark:border-white/15 last:border-b-0 overflow-hidden">
+            <div
+              data-aos="fade-up"
+              key={index}
+              className="border-b border-black/15 dark:border-white/15 last:border-b-0 overflow-hidden"
+            >
               <div
                 className="flex justify-between gap-8 cursor-pointer items-start text-2xl py-4"
                 onClick={() => showAnswer(index)}
               >
-                <h1 className="text-xl text-black/85 dark:text-white/95">{data.question}</h1>
+                <h1 className="text-xl text-black/85 dark:text-white/95">
+                  {data.question}
+                </h1>
                 <span
                   className={`text-2xl text-primary font-bold ${
                     showSelectedQ === index ? "rotate-180" : ""

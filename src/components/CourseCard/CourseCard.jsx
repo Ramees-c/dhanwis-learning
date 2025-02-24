@@ -58,8 +58,12 @@ function CourseCard() {
               alt=""
             />
             <div className="p-6 transition duration-300 ease-in h-full">
-              <h1 className="text-2xl font-bold mb-3 text-black/85 dark:text-white/95">{data.course}</h1>
-              <p className="leading-relaxed mb-3 text-black/85 dark:text-white/95">{data.desc}</p>
+              <h1 className="text-2xl font-bold mb-3 text-black/85 dark:text-white/95">
+                {data.course}
+              </h1>
+              <p className="leading-relaxed mb-3 text-black/85 dark:text-white/95">
+                {data.desc}
+              </p>
               <div className="flex items-end flex-wrap justify-center">
                 <Link
                   to="/courses"

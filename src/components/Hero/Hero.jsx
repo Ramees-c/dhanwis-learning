@@ -58,7 +58,7 @@ function Hero() {
               <div key={data.id}>
                 <div key={data.id} className="grid grid-cols-1 xl:grid-cols-2">
                   {/* text content section */}
-                  <div className="flex flex-col justify-center gap-4 sm:pl-3 pt-12 sm:pt-0 text-center xl:text-left order-2 xl:order-1 relative z-10">
+                  <div className="flex flex-col justify-center gap-4 sm:pl-3 sm:pt-0 text-center xl:text-left order-2 xl:order-1 relative z-10">
                     <h1
                       data-aos="fade-up"
                       data-aos-duration="500"
