@@ -63,7 +63,7 @@ function Hero() {
                       data-aos="fade-up"
                       data-aos-duration="500"
                       data-aos-once="true"
-                      className="text-1xl sm:text-5xl lg-text-1xl font-bold text-primary"
+                      className="text-1xl sm:text-5xl lg:text-5xl xl-text-1xl font-bold text-primary"
                     >
                       {data.subtitle}
                     </h1>

@@ -151,10 +151,10 @@ function ContactPage() {
                     <div></div>
                     <div>
                       <p className="text-black/85 dark:text-white ">
-                        +91 8075487219, +91 9961487219,
+                        <a href="tel:+918075487219" className="hover:text-primary">+91 8075487219,</a> <a href="tel:+919961487219" className="hover:text-primary">+91 9961487219,</a>
                       </p>
                       <p className="text-black/85 dark:text-white mt-2">
-                        +91 9946487219
+                        <a href="tel:+919946487219" className="hover:text-primary">+91 9946487219</a>
                       </p>
                     </div>
 

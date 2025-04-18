@@ -58,7 +58,7 @@ function Footer() {
   return (
     <div className="hero-bg-color rounded-t-3xl">
       <div className="container">
-        <div className="grid lg:grid-cols-3 pb-20 pt-5">
+        <div className="grid lg:grid-cols-1 xl:grid-cols-3 pb-20 pt-5">
           {/* Company details */}
           <div className=" py-8 px-4">
             <Link to="/">

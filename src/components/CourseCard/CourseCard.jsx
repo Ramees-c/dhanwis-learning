@@ -33,7 +33,7 @@ function CourseCard() {
       id: 4,
       course: "Digital Marketting",
       image: digital_img,
-      desc: "Master digital marketing strategies to boost online presence and growth.",
+      desc: "Master digital marketing to boost your online presence and growth.",
       aosDelay: "600",
     },
   ];
@@ -43,18 +43,18 @@ function CourseCard() {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5 place-items-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-5 place-items-center">
       {CourseData.map((data) => (
         <div
           data-aos="fade-up"
           data-aos-delay="{data.aosDelay}"
           key={data.id}
-          className="p-4"
+          className="p-4 h-full"
         >
           <div className="h-full shadow-xl rounded-3xl dark:bg-gray-800 overflow-hidden hover:shadow-2xl hover:dark:shadow-gray-800 transition-shadow duration-300 border-2 dark:border-none">
             <img
               src={data.image}
-              className="lg:h-68 md:h-38 w-full object-cover object-center"
+              className="lg:h-48 md:h-38 w-full object-cover object-center"
               alt=""
             />
             <div className="p-6 transition duration-300 ease-in h-full">
