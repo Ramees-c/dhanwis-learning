@@ -8,8 +8,7 @@ function CoursesPage() {
   return (
     <div>
       <div className="container">
-        {/* Page Header */}
-        <PageHeader title="Courses" />
+        
         <div>
           <CoursePageCard />
         </div>

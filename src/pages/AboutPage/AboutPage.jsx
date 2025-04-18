@@ -7,6 +7,9 @@ import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
 import CallIcon from "../../components/CallIcon/CallIcon";
 import { FaHandsHelping, FaRoute, FaTrophy } from "react-icons/fa";
 
+
+import About_page_image from '../../assets/images/page_header/about_page.jpg'
+
 function AboutPage() {
   const ServiceData = [
     {
@@ -40,11 +43,8 @@ function AboutPage() {
   ];
 
   return (
-    <div>
-      <div className="container">
-        {/* Page header */}
-        <PageHeader title="About" />
-      </div>
+    <div className="pt-5">
+      
 
       <div className="mb-20">
         <AboutPageAboutSection />
@@ -57,7 +57,7 @@ function AboutPage() {
               data-aos="fade-up"
               data-aos-delay={data.aosDelay}
               key={data.id}
-              className="space-y-4 p-6 rounded-xl shadow-[0_0_22px_rgba(0,0,0,0.15)] hover:shadow-xl hover:dark:shadow-gray-800 transition-shadow duration-300 cursor-pointer"
+              className="space-y-4 p-6 rounded-xl dark:bg-gray-800 shadow-[0_0_22px_rgba(0,0,0,0.15)] hover:shadow-xl hover:dark:shadow-gray-800 transition-shadow duration-300"
             >
               {/* Icon section */}
               <div className="w-10 h-10 rounded-lg flex justify-center text-white">

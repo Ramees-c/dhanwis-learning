@@ -33,10 +33,8 @@ function ContactPage() {
   };
 
   return (
-    <div>
+    <div className="pt-10">
       <div className="container">
-        {/* page header */}
-        <PageHeader title="Contact" />
 
         {/* Heading section */}
         <div className="space-y-4 max-w-[2000px] text-center mx-auto mb-5 ">
@@ -108,7 +106,7 @@ function ContactPage() {
 
             <div className="max-w-[1320px] flex xl:flex-row flex-col justify-center items-center">
               <div
-                className="basis-[50%] w-full mb-10 xl:mb-0"
+                className="basis-[60%] w-full mb-10 xl:mb-0"
                 data-aos="fade-up"
                 data-aos-duration="500"
               >

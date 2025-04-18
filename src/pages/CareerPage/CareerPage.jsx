@@ -36,10 +36,9 @@ function CareerPage() {
   ];
 
   return (
-    <div>
+    <div className="pt-10">
       <div className="container">
-        {/* page header */}
-        <PageHeader title="Careers" />
+        
 
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 place-items-center pb-20">
           {jobOpenings.map((item) => (

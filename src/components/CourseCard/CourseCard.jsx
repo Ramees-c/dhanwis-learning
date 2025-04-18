@@ -51,7 +51,7 @@ function CourseCard() {
           key={data.id}
           className="p-4"
         >
-          <div className="h-full shadow-xl rounded-3xl hero-bg-color overflow-hidden cursor-pointer hover:shadow-2xl hover:dark:shadow-gray-800 transition-shadow duration-300 border-2 dark:border-none">
+          <div className="h-full shadow-xl rounded-3xl dark:bg-gray-800 overflow-hidden hover:shadow-2xl hover:dark:shadow-gray-800 transition-shadow duration-300 border-2 dark:border-none">
             <img
               src={data.image}
               className="lg:h-68 md:h-38 w-full object-cover object-center"

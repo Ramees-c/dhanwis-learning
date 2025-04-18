@@ -24,7 +24,6 @@ import CallIcon from "../../components/CallIcon/CallIcon";
 
 function GalleryPage() {
   const Images = [
-    img1,
     img2,
     img3,
     img4,
@@ -43,8 +42,7 @@ function GalleryPage() {
   return (
     <div>
       <div className="container">
-        {/* page header */}
-        <PageHeader title="Gallery" />
+        
 
         <div className="columns-1 sm:columns-2 lg:columns-3 py-10 md:py-20 gap-4">
           <div speed={500} plugins={[]} mode="lg-fade" download={false}>

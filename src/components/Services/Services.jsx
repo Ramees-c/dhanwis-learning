@@ -57,7 +57,7 @@ function Services() {
               data-aos="fade-up"
               data-aos-delay={data.aosDelay}
               key={data.id}
-              className="space-y-4 p-6 rounded-xl shadow-[0_0_22px_rgba(0,0,0,0.15)] hover:shadow-xl hover:dark:shadow-gray-800 transition-shadow duration-300 cursor-pointer"
+              className="space-y-4 p-6 rounded-xl dark:bg-gray-800 shadow-[0_0_22px_rgba(0,0,0,0.15)] hover:shadow-xl hover:dark:shadow-gray-800 transition-shadow duration-300"
             >
               {/* Icon section */}
               <div className="w-10 h-10 rounded-lg flex justify-center text-white">

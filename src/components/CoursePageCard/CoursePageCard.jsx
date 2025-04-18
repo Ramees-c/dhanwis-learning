@@ -65,7 +65,7 @@ function CoursePageCard() {
             data-aos="fade-up"
             data-aos-delay="{data.aosDelay}"
             key={index}
-            className="h-full shadow-xl rounded-3xl hero-bg-color overflow-hidden hover:shadow-2xl hover:dark:shadow-gray-800 transition-shadow duration-300 border-2 dark:border-none"
+            className="h-full shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl dark:bg-gray-800 hover:dark:shadow-gray-800 transition-shadow duration-300 border-2 dark:border-none"
           >
             <header>
               <img
@@ -81,7 +81,7 @@ function CoursePageCard() {
               <h2 className="mb-5 text-black/85 dark:text-white/85">
                 {data.duration}
               </h2>
-              <div className="flex-1 inline-flex items-center mb-3">
+              <div className="flex-1 inline-flex items-center mb-7">
                 <div className="bg-yellow-300 mr-3 p-1 rounded-full">
                   <svg
                     className="h-3 w-3 text-yellow-800 fill-current"
@@ -97,7 +97,7 @@ function CoursePageCard() {
                   {data.title1}
                 </p>
               </div>
-              <div className="flex-1 inline-flex items-center mb-3">
+              <div className="flex-1 inline-flex items-center mb-7">
                 <div className="bg-yellow-300 mr-3 p-1 rounded-full">
                   <svg
                     className="h-3 w-3 text-green-800 fill-current"
@@ -113,7 +113,7 @@ function CoursePageCard() {
                   {data.title2}
                 </p>
               </div>
-              <div className="flex-1 inline-flex items-center mb-3">
+              <div className="flex-1 inline-flex items-center mb-7">
                 <div className="bg-yellow-300 mr-3 p-1 rounded-full">
                   <svg
                     className="h-3 w-3 text-green-800 fill-current"
@@ -129,7 +129,7 @@ function CoursePageCard() {
                   {data.title3}
                 </p>
               </div>
-              <div className="flex-1 inline-flex items-center mb-3">
+              <div className="flex-1 inline-flex items-center mb-7">
                 <div className="bg-yellow-300 mr-3 p-1 rounded-full">
                   <svg
                     className="h-3 w-3 text-green-800 fill-current"
@@ -145,7 +145,7 @@ function CoursePageCard() {
                   {data.title4}
                 </p>
               </div>
-              <div className="flex-1 inline-flex items-center mb-3">
+              <div className="flex-1 inline-flex items-center mb-7">
                 <div className="bg-yellow-300 mr-3 p-1 rounded-full">
                   <svg
                     className="h-3 w-3 text-green-800 fill-current"

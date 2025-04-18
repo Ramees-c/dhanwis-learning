@@ -109,7 +109,17 @@ function Footer() {
                 <div className="flex items-center gap-4 mt-6">
                   <FaMobileAlt className="text-xl text-primary" />
                   <p className="text-black/85 dark:text-white/95">
-                    +91 8075487219 <br /> +91 9961487219 <br /> +91 9946487219
+                    <a href="tel:+918075487219" className="hover:text-primary">
+                      +91 8075487219
+                    </a>{" "}
+                    <br />{" "}
+                    <a href="tel:+919961487219" className="hover:text-primary">
+                      +91 9961487219
+                    </a>{" "}
+                    <br />{" "}
+                    <a href="tel:+919946487219" className="hover:text-primary">
+                      +91 9946487219
+                    </a>
                   </p>
                 </div>
 
@@ -139,7 +149,14 @@ function Footer() {
         {/* Copyright section */}
         <div className="text-center py-6 border-t-2 border-black/15 dark:border-white/15">
           <span className="text-sm text-gray-700 dark:text-white/70">
-            © 2025 Dhanwis, All Rights Reserved. Design By Dhanwis
+            © {new Date().getFullYear()} Dhanwis, All Rights Reserved. Design By{" "}
+            <a
+              href="http://www.dhanwis.com/"
+              target="_blank"
+              className="text-primary font-bold"
+            >
+              Design By Dhanwis Techinfo Solutions
+            </a>
           </span>
         </div>
       </div>

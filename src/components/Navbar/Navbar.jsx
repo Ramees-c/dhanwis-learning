@@ -63,7 +63,7 @@ function Navbar() {
             {/* Menu Items */}
             <div>
               <ul
-                className={`lg:flex pt-14 lg:pt-0 lg:items-center lg:pb-0 pb-12 absolute lg:static bg-white dark:bg-gray-900 dark:text-white lg:z-auto z-[-1] left-0 md:left-5 w-full lg:w-auto lg:pl-0 pl-9  ${
+                className={`lg:flex pt-14 lg:pt-0 lg:items-center lg:pb-0 pb-12 absolute lg:static bg-white dark:bg-gray-900 dark:text-white lg:z-auto z-[-1] left-0 md:left-5 w-full lg:w-auto md:pl-0 pl-9  ${
                   isOpen ? "visible opacity-100" : "hidden"
                 } lg:opacity-100`}
               >
@@ -71,7 +71,7 @@ function Navbar() {
                   <li key={index}>
                     <NavLink
                       to={menu.link}
-                      className="inline-block px-4 py-2 lg:py-0 font-bold text-grey-500 hover:text-primary dark:hover-text-white"
+                      className="inline-block px-3 py-2 xl:px-6 lg:py-0 text-sm md:text-xl font-bold text-grey-500 hover:text-primary dark:hover-text-white"
                       style={navLinkStyles}
                       onClick={() => setIsOpen(false)}
                     >

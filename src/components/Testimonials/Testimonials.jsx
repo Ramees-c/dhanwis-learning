@@ -4,6 +4,9 @@ import sruthi_profile from "../../assets/images/testimonials/sruthi.jpeg";
 import adarsh_profile from "../../assets/images/testimonials/adarsh.jpg";
 import vaishnav_profile from "../../assets/images/testimonials/vaishanav.jpg";
 
+import avatar_boy_img from "../../assets/images/testimonials/avatarb.jpg";
+import avatar_girl_img from "../../assets/images/testimonials/avatarg.jpg"
+
 import Slider from "react-slick";
 
 function Testimonials() {
@@ -32,9 +35,41 @@ function Testimonials() {
       content:
         "I highly endorse the Python course at Dhanwis Learning Hub. The curriculum was thorough, and the instructors were always helpful. The practical projects made learning engaging and effective. I now feel confident in my programming abilities.",
     },
+    {
+      id: 4,
+      profile_photo: avatar_boy_img,
+      name: "Muzammil",
+      company: "Student @Dhanwis Academy",
+      content:
+        "I am incredibly grateful for the knowledge and skills I gained during the digital marketing course. The practical approach and in-depth training have equipped me with confidence to excel in the industry. The supportive mentors and hands-on projects have been truly valuable.",
+    },
+    {
+      id: 5,
+      profile_photo: avatar_boy_img,
+      name: "Dhyan",
+      company: "Student @Dhanwis Academy",
+      content:
+        "I completed the Python course at Dhanwis Academy, and it was an outstanding learning experience. The course covered everything from basics to advanced concepts, with clear and practical examples. The instructors were highly knowledgeable and always ready to help. I gained a strong foundation in Python, which has greatly boosted my coding skills.",
+    },
+    {
+      id: 6,
+      profile_photo: avatar_boy_img,
+      name: "Akash",
+      company: "Student @Dhanwis Academy",
+      content:
+        "Honing skills in digital marketing at DHANWIS ACADEMY was one of the best decisions I’ve made. The course covered everything in digital marketing, with practical assignments that mirrored real-life scenarios. The Instructors was supportive and provided great mentorship.",
+    },
+    {
+      id: 7,
+      profile_photo: avatar_girl_img,
+      name: "Amitha V",
+      company: "Student @Dhanwis Academy",
+      content:
+        "Studying at DHANWIS ACADEMY was an incredible experience. The curriculum was up-to-date with current digital marketing trends and included hands-on projects. Professors with industry experience made learning practical and engaging. The access to real-world tools and internships helped me build confidence in my skills.",
+    },
   ];
   const settings = {
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     speed: 800,

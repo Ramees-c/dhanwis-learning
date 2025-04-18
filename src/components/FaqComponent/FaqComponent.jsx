@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import about_img from "../../assets/images/about/about1.jpg"
+
 function FaqComponent() {
   const FaqData = [
     {
@@ -45,37 +47,51 @@ function FaqComponent() {
         </div>
 
         {/* Content section */}
-        <div>
-          {FaqData.map((data, index) => (
-            <div
-              data-aos="fade-up"
-              key={index}
-              className="border-b border-black/15 dark:border-white/15 last:border-b-0 overflow-hidden"
-            >
+        <div className="max-w-[1320px] lg:py-[80] gap-10 py-5 flex xl:flex-row flex-col justify-center items-center mx-auto">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="500"
+            className="basis-[45%]"
+          >
+            <img
+              src={about_img}
+              className="w-full rounded-xl mb-10 xl:mb-0"
+              alt=""
+            />
+          </div>
+
+          <div className="basis-[45%]">
+            {FaqData.map((data, index) => (
               <div
-                className="flex justify-between gap-8 cursor-pointer items-start text-2xl py-4"
-                onClick={() => showAnswer(index)}
+                data-aos="fade-up"
+                key={index}
+                className="border-b border-black/15 dark:border-white/15 last:border-b-0 overflow-hidden"
               >
-                <h1 className="text-xl text-black/85 dark:text-white/95">
-                  {data.question}
-                </h1>
-                <span
-                  className={`text-2xl text-primary font-bold ${
-                    showSelectedQ === index ? "rotate-180" : ""
-                  } ease-in-out duration-500`}
+                <div
+                  className="flex justify-between gap-8 cursor-pointer items-start text-2xl py-4"
+                  onClick={() => showAnswer(index)}
                 >
-                  {showSelectedQ === index ? "-" : "+"}
-                </span>
+                  <h1 className="text-xl text-black/85 dark:text-white/95">
+                    {data.question}
+                  </h1>
+                  <span
+                    className={`text-2xl text-primary font-bold ${
+                      showSelectedQ === index ? "rotate-180" : ""
+                    } ease-in-out duration-500`}
+                  >
+                    {showSelectedQ === index ? "-" : "+"}
+                  </span>
+                </div>
+                <p
+                  className={`text-lg opacity-75 ease-in-out duration-500 ${
+                    showSelectedQ === index ? "max-h-96" : "max-h-0"
+                  }`}
+                >
+                  {data.answer}
+                </p>
               </div>
-              <p
-                className={`text-lg opacity-75 ease-in-out duration-500 ${
-                  showSelectedQ === index ? "max-h-96" : "max-h-0"
-                }`}
-              >
-                {data.answer}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
