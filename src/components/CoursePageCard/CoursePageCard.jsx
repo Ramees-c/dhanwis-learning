@@ -4,21 +4,22 @@ import flutter_img from "../../assets/images/courses/1.png";
 import mern_img from "../../assets/images/courses/2.png";
 import python_img from "../../assets/images/courses/3.png";
 import digital_img from "../../assets/images/courses/4.png";
+import react_img from "../../assets/images/courses/react.png"
 
 function CoursePageCard() {
   const CardData = [
-    {
-      course: "Flutter",
-      image: flutter_img,
-      duration: "4 Months",
-      title1: "Learn Flutter, Dart, Firebase, APIs",
-      title2: "One-on-one training with expert mentors",
-      title3: "Real-world project experience during training",
-      title4: "Internship & certification provided",
-      title5: "Placement assistance until you secure a job",
-      title6: "Build cross-platform mobile apps for iOS & Android",
-      aosDelay: "0",
-    },
+    // {
+    //   course: "Flutter",
+    //   image: flutter_img,
+    //   duration: "4 Months",
+    //   title1: "Learn Flutter, Dart, Firebase, APIs",
+    //   title2: "One-on-one training with expert mentors",
+    //   title3: "Real-world project experience during training",
+    //   title4: "Internship & certification provided",
+    //   title5: "Placement assistance until you secure a job",
+    //   title6: "Build cross-platform mobile apps for iOS & Android",
+    //   aosDelay: "0",
+    // },
     {
       course: "MERN",
       image: mern_img,
@@ -29,8 +30,21 @@ function CoursePageCard() {
       title4: "Internship & course certification",
       title5: "Placement assistance until you get hired",
       title6: "Industry-based curriculum* for full-stack development",
+      aosDelay: "0",
+    },
+    {
+      course: "REACT",
+      image: react_img,
+      duration: "3 Months",
+      title1: "One-on-one training with expert mentors",
+      title2: "Real-world project experience during training",
+      title3: "Internship & certification provided",
+      title4: "Placement assistance until you secure a job",
+      title5: "Build dynamic, responsive web applications for desktop & mobile",
+      title6: "Master essential tools like React Router, Hooks, and Context API",
       aosDelay: "200",
     },
+    
     {
       course: "PYTHON",
       image: python_img,

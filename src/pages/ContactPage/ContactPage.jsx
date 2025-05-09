@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Button from "../../components/Shared/Button";
 
-import contact_img from "../../assets/images/contact/contact_img.jpg";
+import contact_img from "../../assets/images/contact/contact2.jpg";
 import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import CallIcon from "../../components/CallIcon/CallIcon";

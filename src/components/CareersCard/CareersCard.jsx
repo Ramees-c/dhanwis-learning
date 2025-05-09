@@ -17,7 +17,7 @@ function CareersCard({ title, company, location, description, JobType }) {
   return (
     <div className="pb-20">
       <div
-        className="rounded-xl p-6 shadow-[0_0_22px_rgba(0,0,0,0.15)] hover:dark:shadow-gray-800 transition-shadow duration-300 max-h-[400px]"
+        className="rounded-xl p-6 shadow-[0_0_22px_rgba(0,0,0,0.15)] hover:dark:shadow-gray-800 dark:bg-gray-800 transition-shadow duration-300 max-h-[500px]"
         data-aos="fade-up"
       >
         <h2 className="text-xl font-semibold text-black/85 dark:text-white/85">

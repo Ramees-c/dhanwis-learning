@@ -29,11 +29,11 @@ const MenuLinks = [
     name: "Gallery",
     link: "/gallery",
   },
-  {
-    id: 5,
-    name: "Careers",
-    link: "/careers",
-  },
+  // {
+  //   id: 5,
+  //   name: "Careers",
+  //   link: "/careers",
+  // },
   {
     id: 6,
     name: "Contact",

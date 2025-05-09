@@ -46,15 +46,16 @@ function AboutPageAboutSection() {
               className="basis-[45%] ml-0 xl:ml-10"
             >
               <h1 className="uppercase font-semibold text-2xl text-primary mb-1">
-                Learn Flutter from Industry Experts & Build Real Apps
+                Learn React from Industry Experts & Build Real-World Web
+                Applications
               </h1>
               <p className="mb-5 text-black/85 dark:text-white/95 text-justify [word-spacing:0.1rem]">
-                Learn Flutter from industry experts and build real-world
-                applications with hands-on experience. Master cross-platform
-                development using Flutter and Dart to create high-performance
-                mobile apps for Android and iOS. Gain in-depth knowledge, best
-                practices, and practical skills to turn your ideas into reality
-                and kickstart your career in app development.
+                Learn React from industry experts and build real-world web
+                applications with hands-on experience. Master front-end
+                development using React and JavaScript to create dynamic,
+                high-performance websites and web apps. Gain in-depth knowledge,
+                best practices, and practical skills to turn your ideas into
+                reality and kickstart your career in web development.
               </p>
 
               <div className="flex flex-col justify-center items-start gap-4">

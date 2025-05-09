@@ -7,8 +7,7 @@ import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
 import CallIcon from "../../components/CallIcon/CallIcon";
 import { FaHandsHelping, FaRoute, FaTrophy } from "react-icons/fa";
 
-
-import About_page_image from '../../assets/images/page_header/about_page.jpg'
+import About_page_image from "../../assets/images/page_header/about_page.jpg";
 
 function AboutPage() {
   const ServiceData = [
@@ -44,8 +43,6 @@ function AboutPage() {
 
   return (
     <div className="pt-5">
-      
-
       <div className="mb-20">
         <AboutPageAboutSection />
       </div>

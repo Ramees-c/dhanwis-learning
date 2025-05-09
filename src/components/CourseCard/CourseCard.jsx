@@ -4,22 +4,30 @@ import flutter_img from "../../assets/images/courses/1.png";
 import mern_img from "../../assets/images/courses/2.png";
 import python_img from "../../assets/images/courses/3.png";
 import digital_img from "../../assets/images/courses/4.png";
+import react_img from "../../assets/images/courses/react.png";
 import { Link } from "react-router-dom";
 
 function CourseCard() {
   const CourseData = [
+    // {
+    //   id: 1,
+    //   course: "Flutter",
+    //   image: flutter_img,
+    //   desc: "Master Flutter development and build stunning cross-platform mobile apps.",
+    //   aosDelay: "0",
+    // },
     {
       id: 1,
-      course: "Flutter",
-      image: flutter_img,
-      desc: "Master Flutter development and build stunning cross-platform mobile apps.",
+      course: "MERN",
+      image: mern_img,
+      desc: "Master MERN Stack and build dynamic, full-stack web applications effortlessly.",
       aosDelay: "0",
     },
     {
       id: 2,
-      course: "MERN",
-      image: mern_img,
-      desc: "Master MERN Stack and build dynamic, full-stack web applications effortlessly.",
+      course: "REACT",
+      image: react_img,
+      desc: "Master React and build dynamic, modern web applications effortlessly.",
       aosDelay: "200",
     },
     {
