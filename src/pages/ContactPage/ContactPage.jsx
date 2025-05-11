@@ -7,6 +7,8 @@ import WhatsappIcon from "../../components/WhatsappIcon/WhatsappIcon";
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import CallIcon from "../../components/CallIcon/CallIcon";
 
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+
 function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -35,7 +37,6 @@ function ContactPage() {
   return (
     <div className="pt-10">
       <div className="container">
-
         {/* Heading section */}
         <div className="space-y-4 max-w-[2000px] text-center mx-auto mb-5 ">
           <h1 className="uppercase font-bold text-2xl xl:text-4xl text-primary font-titleFont">
@@ -67,7 +68,7 @@ function ContactPage() {
                 name="name"
                 placeholder="enter name"
                 value={formData.name}
-                className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
+                className="py-3 px-2 rounded-lg outline-none border dark:border-none border-gray-400 text-black hover:shadow-lg transition-all"
                 onChange={handleChange}
                 required
               />
@@ -77,7 +78,7 @@ function ContactPage() {
               <textarea
                 rows="7"
                 cols="20"
-                className="py-3 px-2 rounded-lg outline-none border dark:border-none text-black hover:shadow-lg transition-all"
+                className="py-3 px-2 rounded-lg outline-none border border-gray-400 dark:border-none text-black hover:shadow-lg transition-all"
                 placeholder="message"
                 name="message"
                 value={formData.message}
@@ -106,7 +107,7 @@ function ContactPage() {
 
             <div className="max-w-[1320px] flex xl:flex-row flex-col justify-center items-center">
               <div
-                className="basis-[60%] w-full mb-10 xl:mb-0"
+                className="w-full mb-10 xl:mb-0"
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
@@ -121,7 +122,7 @@ function ContactPage() {
                 ></iframe>
               </div>
 
-              <div
+              {/* <div
                 className="basis-[50%] ml-0 xl:ml-10 w-full"
                 data-aos="fade-up"
                 data-aos-duration="500"
@@ -151,10 +152,26 @@ function ContactPage() {
                     <div></div>
                     <div>
                       <p className="text-black/85 dark:text-white ">
-                        <a href="tel:+918075487219" className="hover:text-primary">+91 8075487219,</a> <a href="tel:+919961487219" className="hover:text-primary">+91 9961487219,</a>
+                        <a
+                          href="tel:+918075487219"
+                          className="hover:text-primary"
+                        >
+                          +91 8075487219,
+                        </a>{" "}
+                        <a
+                          href="tel:+919961487219"
+                          className="hover:text-primary"
+                        >
+                          +91 9961487219,
+                        </a>
                       </p>
                       <p className="text-black/85 dark:text-white mt-2">
-                        <a href="tel:+919946487219" className="hover:text-primary">+91 9946487219</a>
+                        <a
+                          href="tel:+919946487219"
+                          className="hover:text-primary"
+                        >
+                          +91 9946487219
+                        </a>
                       </p>
                     </div>
 
@@ -177,10 +194,73 @@ function ContactPage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
+
+        <div className="max-w-[1320px] mx-auto pb-20">
+          <div className="flex flex-col lg:flex-row gap-7">
+            {/* Phone Number Section */}
+            <div className="flex-1 flex items-start gap-7">
+              <div className="border-2 border-black dark:border-white rounded-[50%] p-4">
+                <FaPhone className="text:lg lg:text-2xl text-primary" />
+              </div>
+              <div>
+                <h2 className="text-xl font-semibold text-black/85 dark:text-white mb-2">
+                  Phone Number
+                </h2>
+                <div className="space-y-1">
+                  <p className="text-gray-500 text-lg dark:text-white/70 hover:text-primary dark:hover:text-primary duration-300">
+                    <a href="tel:+918075487219">+91 8075487219</a>
+                  </p>
+                  <p className="text-gray-500 text-lg dark:text-white/70 hover:text-primary dark:hover:text-primary duration-300">
+                    <a href="tel:+919961487219">+91 9961487219</a>
+                  </p>
+                  <p className="text-gray-500 text-lg dark:text-white/70 hover:text-primary dark:hover:text-primary duration-300">
+                    <a href="tel:+919946487219">+91 9946487219</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Email Section */}
+            <div className="flex-1 flex items-start gap-7">
+              <div className="border-2 border-black dark:border-white rounded-[50%] p-4">
+                <FaEnvelope className="text:lg lg:text-2xl text-primary" />
+              </div>
+              <div>
+                <h2 className="text-xl font-semibold text-black/85 dark:text-white mb-2">
+                  E-Mail Support
+                </h2>
+                <p className="text-gray-500 text-lg dark:text-white/70 hover:text-primary dark:hover:text-primary duration-300">
+                  <a href="mailto:info@dhanwis.com">info@dhanwis.com</a>
+                </p>
+              </div>
+            </div>
+
+            {/* Address Section */}
+            <div className="flex-1 flex items-start gap-7">
+              <div className="border-2 border-black dark:border-white rounded-[50%] p-4">
+                <FaMapMarkerAlt className="text:lg lg:text-2xl text-primary" />
+              </div>
+              <div>
+                <h2 className="text-xl font-semibold text-black/85 dark:text-white mb-2">
+                  Address
+                </h2>
+                <p className="text-gray-500 dark:text-white/70 text-lg">
+                  TKH Building, Opp Jawahar Library,
+                </p>
+                <p className="text-gray-500 dark:text-white/70 text-lg">
+                  Yogasala Road,
+                </p>
+                <p className="text-gray-500 dark:text-white/70 text-lg">
+                  Kannur - 670001
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Whtasapp icon */}

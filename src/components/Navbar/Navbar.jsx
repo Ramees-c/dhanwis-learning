@@ -71,7 +71,7 @@ function Navbar() {
                   <li key={index}>
                     <NavLink
                       to={menu.link}
-                      className="inline-block px-3 py-2 xl:px-6 lg:py-0 text-sm md:text-xl font-bold text-grey-500 hover:text-primary dark:hover-text-white"
+                      className="inline-block px-3 py-2 xl:px-6 lg:py-0 text-lg md:text-xl font-bold text-grey-500 hover:text-primary dark:hover-text-white"
                       style={navLinkStyles}
                       onClick={() => setIsOpen(false)}
                     >

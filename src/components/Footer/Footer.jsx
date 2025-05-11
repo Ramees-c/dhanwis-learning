@@ -58,7 +58,7 @@ function Footer() {
   return (
     <div className="hero-bg-color rounded-t-3xl">
       <div className="container">
-        <div className="grid lg:grid-cols-1 xl:grid-cols-3 pb-20 pt-5">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr_1fr] pb-10 pt-5">
           {/* Company details */}
           <div className=" py-8 px-4">
             <Link to="/">
@@ -76,13 +76,25 @@ function Footer() {
                 href="https://www.instagram.com/dhanwis_academy"
                 target="_blank"
               >
-                <FaInstagram className="text-3xl hover:text-primary dark:hover:text-primary text-black/85 dark:text-white/95 duration-300 hover:-translate-y-1 transition" />
+                <div className="border border-1 border-black/85 dark:border-white/95 hover:border-primary dark:hover:border-primary hover:bg-primary rounded-[50%] p-3 duration-300 hover:-translate-y-2 transition">
+                  <FaInstagram className="text-xl text-black/85 dark:text-white/95" />
+                </div>
               </a>
-              <a href="https://www.facebook.com/dhanwisacademy" target="_blank">
-                <FaFacebook className="text-3xl hover:text-primary dark:hover:text-primary text-black/85 dark:text-white/95 duration-300 hover:-translate-y-1 transition" />
+
+              <a
+                href="https://www.facebook.com/dhanwisacademy"
+                className=""
+                target="_blank"
+              >
+                <div className="border border-1 border-black/85 dark:border-white/95 hover:border-primary dark:hover:border-primary hover:bg-primary rounded-[50%] p-3 duration-300 hover:-translate-y-2 transition">
+                  <FaFacebook className="text-xl text-black/85 dark:text-white/95" />
+                </div>
               </a>
+
               <a href="https://wa.me/+918086487219">
-                <FaWhatsapp className="text-3xl hover:text-primary dark:hover:text-primary text-black/85 dark:text-white/95 duration-300 hover:-translate-y-1 transition" />
+                <div className="border border-1 border-black/85 dark:border-white/95 hover:border-primary dark:hover:border-primary hover:bg-primary rounded-[50%] p-3 duration-300 hover:-translate-y-2 transition">
+                  <FaWhatsapp className="text-xl text-black/85 dark:text-white/95" />
+                </div>
               </a>
             </div>
           </div>
@@ -101,7 +113,7 @@ function Footer() {
                       style={FooterLinkStyles}
                       onClick={handleClick}
                     >
-                      {link.title}
+                      &gt; {link.title}
                     </NavLink>
                   </li>
                 ))}
