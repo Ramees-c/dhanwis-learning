@@ -1,10 +1,10 @@
 import React from "react";
 
 import flutter_img from "../../assets/images/courses/1.png";
-import mern_img from "../../assets/images/courses/2.png";
-import python_img from "../../assets/images/courses/3.png";
-import digital_img from "../../assets/images/courses/4.png";
-import react_img from "../../assets/images/courses/react.png"
+import mern_img from "../../assets/images/courses/MERN.jpg";
+import python_img from "../../assets/images/courses/PYTHON.jpg";
+import digital_img from "../../assets/images/courses/digital-marketing.jpg";
+import react_img from "../../assets/images/courses/REACT.jpg"
 
 function CoursePageCard() {
   const CardData = [
