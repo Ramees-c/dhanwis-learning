@@ -199,7 +199,11 @@ function ContactPage() {
           </div>
         </section>
 
-        <div className="max-w-[1320px] mx-auto pb-20">
+        <div
+          className="max-w-[1320px] mx-auto pb-20"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
           <div className="flex flex-col lg:flex-row gap-7">
             {/* Phone Number Section */}
             <div className="flex-1 flex items-start gap-7">

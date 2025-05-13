@@ -126,7 +126,7 @@ function Footer() {
                 Address
               </h1>
               <div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-5">
                   <FaLocationArrow className="text-xl text-primary" />
                   <p className="text-black/85 dark:text-white/95 text-md">
                     TKH Building, Opp Jawahar Library, <br /> Yogasala Road,

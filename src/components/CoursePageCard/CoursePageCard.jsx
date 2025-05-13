@@ -73,13 +73,13 @@ function CoursePageCard() {
 
   return (
     <div className="py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 place-items-center cursor-pointe">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 place-items-center">
         {CardData.map((data, index) => (
           <div
             data-aos="fade-up"
             data-aos-delay="{data.aosDelay}"
             key={index}
-            className="h-full shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl dark:bg-gray-800 hover:dark:shadow-gray-800 transition-shadow duration-300 border-2 dark:border-none"
+            className="h-full shadow-xl rounded-3xl overflow-hidden hover:shadow-2xl dark:bg-gray-800 hover:dark:shadow-gray-800 transition-shadow duration-300 border-2 dark:border-none" 
           >
             <header>
               <img
