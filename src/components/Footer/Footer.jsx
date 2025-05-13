@@ -65,10 +65,10 @@ function Footer() {
               <img width="120px" src={logo} alt="logo" onClick={handleClick} />
             </Link>
             <p className="text-black/85 dark:text-white/95 lg:pr-24 pt-3 text-justify  ">
-              Dhanwis Techinfo Solutions is an upcoming creative digital
-              company, devoted to enriching digital experiences by providing
-              innovative and ingenious solutions to small and large-scale
-              businesses.
+              Our academy is a hub for mastering Full Stack Web Development,
+              Mobile App Development, and Digital Marketing. We provide
+              industry-driven training programs tailored to meet the demands of
+              the ever-evolving tech world.
             </p>
             {/* Social links */}
             <div className="flex items-center gap-7 mt-6 ">
