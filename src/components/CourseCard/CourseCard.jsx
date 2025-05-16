@@ -27,7 +27,7 @@ function CourseCard() {
       id: 2,
       course: "REACT",
       image: react_img,
-      desc: "Master React and build dynamic, modern web applications effortlessly.",
+      desc: "Master React and effortlessly build dynamic, modern, interactive web applications.",
       aosDelay: "200",
     },
     {
@@ -65,7 +65,7 @@ function CourseCard() {
               className="lg:h-48 md:h-38 w-full object-cover object-center"
               alt=""
             />
-            <div className="p-6 transition duration-300 ease-in h-full">
+            <div className="pt-6 pb-4 pl-6 pr-6 transition duration-300 ease-in h-full w-[100%]">
               <h1 className="text-2xl font-bold mb-3 text-black/85 dark:text-white/95">
                 {data.course}
               </h1>
